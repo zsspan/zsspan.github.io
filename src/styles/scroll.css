@@ -1,0 +1,31 @@
+.scroll-top {
+  position: fixed;
+  bottom: 2em;
+  right: 3em;
+  background-color: transparent;
+}
+
+.scroll-hide{
+  display: none;
+}
+
+.arrow {
+  font-size: 2em !important;
+  fill: black var(--bg) !important;
+}
+
+.circle {
+  width: 3.15em;
+  height: 3.15em;
+  border-radius: 50%;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .scroll-top {
+    right: 1em;
+  }
+}

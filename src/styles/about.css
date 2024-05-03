@@ -1,0 +1,109 @@
+h2 {
+  text-align: left;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.bottom-content {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  justify-content: center;
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left {
+  flex: 2;
+  padding-right: 50px;
+  min-width: 300px;
+}
+
+.right {
+  align-items: center;
+}
+
+.about-name {
+  color: var(--clr-primary);
+}
+
+.pfp {
+  height: 250px;
+  border-radius: 75px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.pfp:hover{
+  transform: translateY(-10px);
+}
+
+.role {
+  margin-top: 1.2em;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.desc {
+  max-width: 600px;
+  margin-right: 10px;
+}
+
+.desc2 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.contact-info {
+  margin-top: 2em;
+  column-gap: 0.1em;
+}
+
+.about .link--icon {
+  margin-right: 0.8em;
+}
+
+.about .btn--outline {
+  margin-right: 2em;
+}
+
+
+@media (max-width: 600px) {
+  .app .about {
+    align-items: flex-start;
+    margin-top: 2em;
+  }
+
+  .left {
+    padding-right: 0;
+    align-items: center;
+  }
+
+  .role {
+    margin-bottom: 10px;
+  }
+}
+
+.head-span {
+  margin-top: 20px;
+  font-weight: bold;
+  display: block;
+  font-size: larger;
+  color: var(--primary);
+}
+
+.subheading {
+  font-weight: bolder;
+}
+
+.colour {
+  color: var(--primary);
+}

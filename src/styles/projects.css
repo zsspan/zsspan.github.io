@@ -1,0 +1,49 @@
+.projects-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+  grid-gap: 2em;
+}
+
+.project {
+  padding: 2em;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s linear;
+}
+
+.project:hover {
+  transform: translateY(-7px);
+}
+
+.project-description {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.project-tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.5em 0;
+}
+
+.project-tools li {
+  margin: 0.5em;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: var(--fg-alt);
+}
+
+/* .project .link--icon {
+  margin-left: 0.5em;
+} */
+
+.project-image{
+  width:100%;
+  border-radius: 9px;
+  margin: 10px 0;
+}
+

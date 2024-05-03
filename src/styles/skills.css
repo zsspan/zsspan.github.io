@@ -1,0 +1,35 @@
+.skills-list {
+  max-width: 450px;
+  width: 95%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1;
+  align-content: flex-start;
+}
+
+.skill {
+  margin: 0.5em;
+}
+
+.separator{
+  display: flex;
+  justify-content: center;
+}
+
+.skill-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.skill-container p{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.down{
+  padding-top: 1em;
+}
