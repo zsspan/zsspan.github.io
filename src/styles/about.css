@@ -34,9 +34,7 @@ h2 {
 .about-name {
   color: var(--primary);
 }
-.about-name:hover {
-  color: var(--fg);
-}
+
 .pfp {
   height: 250px;
   border-radius: 75px;
