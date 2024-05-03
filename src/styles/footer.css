@@ -6,7 +6,7 @@
 }
 
 .footer-container {
-  margin: 30px 70px;
+  margin: 50px 70px;
   display: flex;
   flex-direction: column;
 }
@@ -42,4 +42,11 @@
     padding: 2em;
     margin-top: 3em;
   }
+  .footer-container{
+    margin: 1em;
+  }
+  .name{
+    margin-bottom: 1em;
+  }
+
 }

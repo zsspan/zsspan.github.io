@@ -177,4 +177,11 @@ svg:hover{
   .section {
     margin-top: 3em;
   }
+  .gradient{
+    background: linear-gradient(0deg, #000000, #10183e, #68163c);	background-size: 180% 180%;
+  	animation: gradient-animation 2s ease infinite;
+  }
+  #projects{
+    margin: 1em 2em;
+  }
 }
