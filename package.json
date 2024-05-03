@@ -2,7 +2,7 @@
   "name": "my-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://zsspan.github.io/personal-website",
+  "homepage": "https://zsspan.github.io/",
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
