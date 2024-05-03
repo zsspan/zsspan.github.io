@@ -7,7 +7,7 @@ const Footer = () => (
     <div className="links-box">
       <a href="mailto:1syedzohair@gmail.com" className="footer-link" target="_blank">1syedzohair@gmail.com</a>
       <a href="mailto:zohairr.syed@mail.utoronto.ca" className="footer-link" target="_blank">zohairr.syed@mail.utoronto.ca</a>
-      <a href="www.linkedin.com/in/zohairsyed" className="footer-link" target="_blank">linkedin.com/in/zohairsyed</a>
+      <a href="https://www.linkedin.com/in/zohairsyed" className="footer-link" target="_blank">linkedin.com/in/zohairsyed</a>
     </div>
     <div className="links-box">
       <p>Made with React</p>

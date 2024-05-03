@@ -63,7 +63,7 @@ const About = () => {
               <GitHub/>
             </a>
             <a
-              href="www.linkedin.com/in/zohairsyed"
+              href="https://www.linkedin.com/in/zohairsyed"
               aria-label="linkedin"
               className="link link--icon"
               target="_blank"
