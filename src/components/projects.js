@@ -7,7 +7,7 @@ const Projects = () => {
     {
       name: 'QuickUp',
       description: 'The all-in-one notes and task management Chrome web app, QuickUp!',
-      tools: ['Chrome APIs', 'JavaScript', 'HTML', 'CSS'],
+      tools: ['Chrome APIs', 'JavaScript', 'HTML', 'CSS', 'Bootstrap'],
       image: 'quickup.png',
       sourceCode: 'https://github.com/zsspan/QuickUp',
       livePreview: 'https://example.com/example-project-1'
