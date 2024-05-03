@@ -18,15 +18,13 @@ const Projects = () => {
       tools: ['Flask', 'Python', 'SQL Alchemy', 'SQLite', 'HTML', 'CSS', 'JavaScript'],
       image: 'cscb20.png', 
       sourceCode: 'https://github.com/zsspan/course-webpage',
-      livePreview: 'https://example.com/example-project-2'
     },
     {
       name: 'Personal Website',
       description: 'The website you are currently viewing :)',
       tools: ['HTML', 'CSS', 'JavaScript', 'React'],
       image: 'website.png', 
-      sourceCode: 'https://github.com/zsspan/course-webpage',
-      livePreview: 'https://example.com/example-project-2'
+      sourceCode: 'https://github.com/zsspan/zsspan.github.io',
     },
     {
       name: 'Full Repository List',
@@ -34,7 +32,6 @@ const Projects = () => {
       tools: [],
       image: 'github.png', 
       sourceCode: 'https://github.com/zsspan?tab=repositories',
-      livePreview: 'https://example.com/example-project-2'
     }
   ];
 
