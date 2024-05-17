@@ -15,7 +15,7 @@ const Projects = () => {
     {
       name: 'CSCB20 Course Webpage',
       description: 'A full-stack course webpage designed for the CSCB20 UTSC course.',
-      tools: ['Flask', 'Python', 'SQL Alchemy', 'SQLite', 'HTML', 'CSS', 'JavaScript'],
+      tools: ['Flask', 'Python', 'SQLite', 'HTML', 'CSS', 'JavaScript'],
       image: 'cscb20.png', 
       sourceCode: 'https://github.com/zsspan/course-webpage',
     },

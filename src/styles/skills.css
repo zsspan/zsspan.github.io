@@ -9,29 +9,44 @@
   align-content: flex-start;
 }
 
-.skill {
+.skills-list li {
   margin: 0.5em;
+  padding: 0.8em 1.2em;
 }
 
-.separator{
+.skill {
+  display: flex;
+  align-items: center;
+}
+
+.skill p {
+  margin: 5px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.skill-img{
+  font-size: 2.15em;
+}
+.separator {
   display: flex;
   justify-content: center;
 }
 
-.skill-container{
+.skill-container {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
 }
 
-.skill-container p{
+.skill-type {
   text-align: center;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.down{
+.down {
   padding-top: 1em;
 }
 
