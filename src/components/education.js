@@ -8,7 +8,7 @@ const About = () => {
         <div className="bottom-content">
             <div className="desc2">
               <span className="head-span">University of Toronto (2023-Present)</span>
-              <p><span className="subheading">Degree:</span> HBSc in Computer Science (Co-OP)</p>
+              <p><span className="subheading">Degree:</span> HBSc in Computer Science (Co-op)</p>
               <p><span className="subheading">Awards:</span> University of Toronto Scholar, Dean's List 2023</p>
               <p><span className="subheading">Activities:</span> AMACSS - First Year Associate</p>
               <span className="head-span">Pickering High School (2019-2023)</span>

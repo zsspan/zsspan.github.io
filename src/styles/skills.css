@@ -12,7 +12,18 @@
 .skills-list li {
   margin: 0.5em;
   padding: 0.8em 1.2em;
+  transition: color 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
 }
+
+.skills-list li:hover {
+  color: var(--primary)
+}
+
+.skills-list li:hover svg{
+  fill: var(--primary);
+}
+
 
 .skill {
   display: flex;
@@ -23,7 +34,12 @@
   margin: 5px;
   font-weight: 400;
   text-align: center;
+  /* transition: color 0.2s ease-in-out; */
 }
+
+/* .skill p:hover{
+  color: var(--primary)
+} */
 
 .skill-img{
   font-size: 2.15em;
