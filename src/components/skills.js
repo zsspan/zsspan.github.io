@@ -10,6 +10,11 @@ import { ReactComponent as React } from "../icons/skill-icons/react.svg";
 import { ReactComponent as Pandas } from "../icons/skill-icons/pandas.svg";
 import { ReactComponent as NumPy } from "../icons/skill-icons/numpy.svg";
 import { ReactComponent as Git } from "../icons/skill-icons/git.svg";
+import { ReactComponent as Bash } from "../icons/skill-icons/bash.svg";
+import { ReactComponent as AndroidStudio } from "../icons/skill-icons/android_studio.svg";
+import { ReactComponent as Agile } from "../icons/skill-icons/agile.svg";
+import { ReactComponent as Jira } from "../icons/skill-icons/jira.svg";
+
 
 import "../styles/skills.css";
 
@@ -56,10 +61,15 @@ const Skills = () => {
                 <SQL className="skill-img" /> <p>SQL</p>
               </div>
             </li>
+            <li className="btn btn--plain">
+              <div className="skill">
+                <Bash className="skill-img" /> <p>Bash</p>
+              </div>
+            </li>
           </ul>
         </div>
         <div className="skill-container">
-          <p className="skill-type">Libraries and Tools</p>
+          <p className="skill-type">Libraries/Tools/Methods</p>
           <ul className="skills-list">
             <li className="btn btn--plain">
               <div className="skill">
@@ -67,22 +77,37 @@ const Skills = () => {
               </div>
             </li>
             <li className="btn btn--plain">
-            <div className="skill">
+              <div className="skill">
+                <AndroidStudio className="skill-img" /> <p>Android Studio</p>
+              </div>
+            </li>
+            <li className="btn btn--plain">
+              <div className="skill">
                 <React className="skill-img" /> <p>React</p>
               </div>
             </li>
             <li className="btn btn--plain">
-            <div className="skill">
+              <div className="skill">
                 <Pandas className="skill-img" /> <p>Pandas</p>
               </div>
             </li>
             <li className="btn btn--plain">
-            <div className="skill">
+              <div className="skill">
                 <NumPy className="skill-img" /> <p>NumPy</p>
               </div>
             </li>
             <li className="btn btn--plain">
-            <div className="skill">
+              <div className="skill">
+                <Agile className="skill-img" /> <p>Agile</p>
+              </div>
+            </li>
+            <li className="btn btn--plain">
+              <div className="skill">
+                <Jira className="skill-img" /> <p>Jira</p>
+              </div>
+            </li>
+            <li className="btn btn--plain">
+              <div className="skill">
                 <Git className="skill-img" /> <p>Git</p>
               </div>
             </li>

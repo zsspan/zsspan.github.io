@@ -30,15 +30,15 @@ const About = () => {
             <span class="colour">Computer Science</span> @ UofT
           </h2>
           <p className="desc">
-            Hi! My name is Zohair Syed and I am currently a 1st-year student at
-            the University of Toronto. I am passionate about most topics and you
-            can find me interested in almost all subjects from technology, math
+            Hi! My name is Zohair Syed and I am currently a 2nd-year CS co-op student at
+            the University of Toronto, doing a specialist in software engineering. 
+            I am passionate about most topics and you can find me interested in almost all subjects from technology, math
             and science all the way to history, language and literature.
             <br></br>
             <br></br>I have a diverse skillset in computer science and am
-            proficient in many backend/frontend languages. Eventually I will be
-            joining the specialist stream in software engineering at UofT and
-            plan to pursue the realm of machine learning.
+            proficient in many full-stack languages. Alongside my software engineering specialist,
+            I am doing a minor in statistics and I hope to pursue the intersection of these disciplines
+            and explore the realm of machine learning.
           </p>
           <div className="contact-info center">
             <a href="mailto:zohairr.syed@mail.utoronto.ca">

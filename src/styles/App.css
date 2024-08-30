@@ -42,13 +42,14 @@ main {
   position: relative;
 }
 
-.about-name{
+.about-name {
   position: relative;
 }
 
 .link:hover {
   color: var(--primary);
 }
+
 .about-name::before,
 .link::before {
   content: '';
@@ -83,7 +84,6 @@ main {
   padding: 0.8em 1.4em;
   font-weight: 500;
   font-size: 0.9rem;
-  text-transform: lowercase;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -141,11 +141,11 @@ main {
   transform: translateY(-5px);
 }
 
-#projects{
+#projects {
   padding-top: 1.5em;
 }
 
-svg{
+svg {
   fill: var(--fg-alt);
   width: 1em;
   height: 1em;
@@ -153,38 +153,44 @@ svg{
   transition: fill 0.2s ease-in-out;
 }
 
-svg:hover{
+svg:hover {
   fill: var(--primary);
 }
 
 /*gradient style and keyframes*/
 .gradient {
-	width: 100%;
-  background: linear-gradient(45deg, #000000, #10183e, #68163c);	background-size: 180% 180%;
-	animation: gradient-animation 5s ease infinite;
+  width: 100%;
+  background: linear-gradient(45deg, #000000, #10183e, #68163c);
+  background-size: 180% 180%;
+  animation: gradient-animation 5s ease infinite;
 }
 
 @keyframes gradient-animation {
-	0% {
-		background-position: 0% 50%;
-	}
-	60% {
-		background-position: 100% 60%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+
+  60% {
+    background-position: 100% 60%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @media (max-width: 600px) {
   .section {
     margin-top: 3em;
   }
-  .gradient{
-    background: linear-gradient(0deg, #000000, #10183e, #68163c);	background-size: 180% 180%;
-  	animation: gradient-animation 2s ease infinite;
+
+  .gradient {
+    background: linear-gradient(0deg, #000000, #10183e, #68163c);
+    background-size: 180% 180%;
+    animation: gradient-animation 2s ease infinite;
   }
-  #projects{
+
+  #projects {
     margin: 1em 2em;
   }
 }
