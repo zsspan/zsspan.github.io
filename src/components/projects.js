@@ -13,11 +13,12 @@ const Projects = () => {
       livePreview: 'https://example.com/example-project-1'
     },
     {
-      name: 'CSCB20 Course Webpage',
-      description: 'A full-stack course webpage designed for the CSCB20 UTSC course.',
-      tools: ['Flask', 'Python', 'SQLite', 'HTML', 'CSS', 'JavaScript'],
-      image: 'cscb20.png', 
-      sourceCode: 'https://github.com/zsspan/course-webpage',
+      name: 'TAAM Android App',
+      description: 'A full-stack Android App made for the TAAM in conjunction with the CSCB07 Software Design course.',
+      tools: ['Android Studio', 'Java', 'Firebase', 'Mockito'],
+      image: 'taam.png',
+      sourceCode: 'https://github.com/zsspan/Toronto-Asian-Art-Museum-Android-App',
+      livePreview: 'https://example.com/example-project-1'
     },
     {
       name: 'Personal Website',
@@ -25,6 +26,20 @@ const Projects = () => {
       tools: ['HTML', 'CSS', 'JavaScript', 'React'],
       image: 'website.png', 
       sourceCode: 'https://github.com/zsspan/zsspan.github.io',
+    },
+    {
+      name: 'Easy NBA',
+      description: 'A Flask app that processes inputted NBA players and uses web scraping, and data tools to provide in-depth statistics and future predictions',
+      tools: ['Python', 'Flask', 'SQLite', 'Pandas', 'BeautifulSoup', 'Seaborh', 'Matplotlib'],
+      image: 'easynba.png', 
+      sourceCode: 'https://github.com/zsspan?tab=repositories',
+    },
+    {
+      name: 'CSCB20 Course Webpage',
+      description: 'A full-stack course webpage designed for the CSCB20 UTSC course.',
+      tools: ['Flask', 'Python', 'SQLite', 'HTML', 'CSS', 'JavaScript'],
+      image: 'cscb20.png', 
+      sourceCode: 'https://github.com/zsspan/course-webpage',
     },
     {
       name: 'Full Repository List',
