@@ -14,7 +14,8 @@ import { ReactComponent as Bash } from "../icons/skill-icons/bash.svg";
 import { ReactComponent as AndroidStudio } from "../icons/skill-icons/android_studio.svg";
 import { ReactComponent as Agile } from "../icons/skill-icons/agile.svg";
 import { ReactComponent as Jira } from "../icons/skill-icons/jira.svg";
-
+import { ReactComponent as R } from "../icons/skill-icons/r.svg";
+import { ReactComponent as Firebase } from "../icons/skill-icons/firebase.svg";
 
 import "../styles/skills.css";
 
@@ -66,6 +67,11 @@ const Skills = () => {
                 <Bash className="skill-img" /> <p>Bash</p>
               </div>
             </li>
+            <li className="btn btn--plain">
+              <div className="skill">
+                <R className="skill-img" /> <p>R</p>
+              </div>
+            </li>
           </ul>
         </div>
         <div className="skill-container">
@@ -84,6 +90,11 @@ const Skills = () => {
             <li className="btn btn--plain">
               <div className="skill">
                 <React className="skill-img" /> <p>React</p>
+              </div>
+            </li>
+            <li className="btn btn--plain">
+              <div className="skill">
+                <Firebase className="skill-img" /> <p>Firebase</p>
               </div>
             </li>
             <li className="btn btn--plain">
