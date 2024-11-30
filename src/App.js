@@ -6,6 +6,8 @@ import Scroll from "./components/scroll";
 import Projects from "./components/projects";
 import Skills from "./components/skills";
 import Education from "./components/education";
+import Experience from "./components/experience";
+
 
 import "./styles/App.css"; // Import CSS file for additional styling
 
@@ -20,6 +22,7 @@ const App = () => {
         <About />
         <Skills />
         <Education />
+        <Experience />
         <Projects />
       </main>
 

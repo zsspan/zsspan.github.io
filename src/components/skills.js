@@ -8,7 +8,7 @@ import { ReactComponent as CSS } from "../icons/skill-icons/css.svg";
 import { ReactComponent as Flask } from "../icons/skill-icons/flask.svg";
 import { ReactComponent as React } from "../icons/skill-icons/react.svg";
 import { ReactComponent as Pandas } from "../icons/skill-icons/pandas.svg";
-import { ReactComponent as NumPy } from "../icons/skill-icons/numpy.svg";
+// import { ReactComponent as NumPy } from "../icons/skill-icons/numpy.svg";
 import { ReactComponent as Git } from "../icons/skill-icons/git.svg";
 import { ReactComponent as Bash } from "../icons/skill-icons/bash.svg";
 import { ReactComponent as AndroidStudio } from "../icons/skill-icons/android_studio.svg";
@@ -16,6 +16,8 @@ import { ReactComponent as Agile } from "../icons/skill-icons/agile.svg";
 import { ReactComponent as Jira } from "../icons/skill-icons/jira.svg";
 import { ReactComponent as R } from "../icons/skill-icons/r.svg";
 import { ReactComponent as Firebase } from "../icons/skill-icons/firebase.svg";
+import { ReactComponent as SKL } from "../icons/skill-icons/scikitlearn.svg";
+
 
 import "../styles/skills.css";
 
@@ -104,7 +106,7 @@ const Skills = () => {
             </li>
             <li className="btn btn--plain">
               <div className="skill">
-                <NumPy className="skill-img" /> <p>NumPy</p>
+                <SKL className="skill-img" /> <p>Scikit-Learn</p>
               </div>
             </li>
             <li className="btn btn--plain">

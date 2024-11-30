@@ -160,7 +160,7 @@ svg:hover {
 /*gradient style and keyframes*/
 .gradient {
   width: 100%;
-  background: linear-gradient(45deg, #000000, #10183e, #68163c);
+  background: linear-gradient(37deg, #000000, #2c093a, #3586c1);
   background-size: 180% 180%;
   animation: gradient-animation 5s ease infinite;
 }

@@ -89,6 +89,7 @@ h2 {
 
   .role {
     margin-bottom: 10px;
+    align-self: flex-start;
   }
 }
 

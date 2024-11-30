@@ -7,7 +7,7 @@ const About = () => {
   
   // Add event listener for window resize
   const handleResize = () => {
-    const isMobile = window.innerWidth < 460;
+    const isMobile = window.innerWidth < 720;
     const role = document.querySelector(".role .colour");
   
     if (isMobile) {
