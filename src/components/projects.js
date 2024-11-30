@@ -30,7 +30,7 @@ const Projects = () => {
     {
       name: 'Easy NBA',
       description: 'A Flask app that processes inputted NBA players and uses web scraping, and data tools to provide in-depth statistics and future predictions',
-      tools: ['Python', 'Flask', 'SQLite', 'Pandas', 'BeautifulSoup', 'Seaborh', 'Matplotlib'],
+      tools: ['Python', 'Flask', 'mySQL', 'Pandas', 'BeautifulSoup', 'scikit-learn', 'Seaborn'],
       image: 'easynba.png', 
       sourceCode: 'https://github.com/zsspan?tab=repositories',
     },
