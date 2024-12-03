@@ -78,7 +78,6 @@ h2 {
 
 @media (max-width: 600px) {
   .app .about {
-    align-items: flex-start;
     margin-top: 2em;
   }
 
@@ -89,7 +88,6 @@ h2 {
 
   .role {
     margin-bottom: 10px;
-    align-self: flex-start;
   }
 }
 
