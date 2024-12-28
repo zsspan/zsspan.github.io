@@ -14,7 +14,7 @@ const Projects = () => {
     },
     {
       name: 'TAAM Android App',
-      description: 'A full-stack Android App made for the TAAM in conjunction with the CSCB07 Software Design course.',
+      description: 'A full-stack Android App made for the TAAM in conjunction with the CSCB07 Software Design course',
       tools: ['Android Studio', 'Java', 'Firebase', 'Mockito'],
       image: 'taam.png',
       sourceCode: 'https://github.com/zsspan/Toronto-Asian-Art-Museum-Android-App'
@@ -36,14 +36,14 @@ const Projects = () => {
     },
     {
       name: 'CSCB20 Course Webpage',
-      description: 'A full-stack course webpage designed for a university-level web development course.',
+      description: 'A full-stack course webpage designed for a university-level web development course',
       tools: ['Flask', 'Python', 'SQLite', 'HTML', 'CSS', 'JavaScript'],
       image: 'cscb20.png', 
       sourceCode: 'https://github.com/zsspan/course-webpage',
     },
     {
       name: 'nowSOS: Emergency Notification App',
-      description: 'A research and design-based concept emergency app for the CSCC10 (HCI) course',
+      description: 'A design and research-based concept emergency app for the CSCC10 (HCI) course',
       tools: ['Figma', 'Research', 'UCD Process', 'User Testing'],
       image: 'nowsosprop.png', 
       sourceCode: 'https://docs.google.com/document/d/1N9SxnsNJASZdvgbfpsQwr4k0cprsaz6N0z4_CTqJkjw/edit?tab=t.0',
