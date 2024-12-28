@@ -67,7 +67,7 @@ const Header = () => {
                 onClick={toggleNavList}
                 className="link link--nav"
               >
-                Experience
+                Experiences
               </a>
             </li>
             <li className="nav-list-item">

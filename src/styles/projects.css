@@ -7,7 +7,7 @@
 }
 
 .project {
-  padding: 2em;
+  padding: 3em 2em 1.5em 2em;
   margin: 0 auto;
   text-align: center;
   box-shadow: var(--shadow);
@@ -59,7 +59,9 @@
 }
 
 /* center the last item if it's alone in the last row */
-.projects-grid > .project:nth-last-child(1):nth-child(odd) {
-  grid-column: 2 / 3;
-  justify-self: center;
+@media (min-width: 875px) {
+  .projects-grid > .project:nth-last-child(1):nth-child(odd) {
+    grid-column: 2 / 3;
+    justify-self: center;
+  }
 }
