@@ -1,20 +1,29 @@
 import "../styles/about.css";
+import "../styles/experience.css";
 
-const About = () => {
+const Experience = () => {
   return (
     <section className="section" id="experience">
       <div className="about center">
         <h2 className="role">EXPERIENCES</h2>
         <div className="bottom-content">
-            <div className="desc2">
-              <span className="head-span">Shopify</span>
-              <p><span className="subheading">Incoming SWE Intern (Jan. 2025 - Apr. 2025)</span></p>
-              <p><span className="subheading">Toronto, ON</span></p>
+          <div className="card">
+            <div className="card-header">
+              <img src="shopify.png" alt="Shopify Logo" className="logo" />
+              <span className="company">Shopify</span>
             </div>
+            <div className="card-body">
+              <p className="position">Software Engineering Intern</p>
+              <div className="dates-location">
+                <p className="dates">Jan 2025 - Apr 2025</p>
+                <p className="location">Toronto, ON</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default About;
+export default Experience;

@@ -22,7 +22,6 @@ h2 {
 }
 
 .left {
-  flex: 2;
   padding-right: 50px;
   min-width: 300px;
 }
@@ -42,7 +41,7 @@ h2 {
   transition: transform 0.2s ease-in-out;
 }
 
-.pfp:hover{
+.pfp:hover {
   transform: translateY(-10px);
 }
 
@@ -105,4 +104,48 @@ h2 {
 
 .colour {
   color: var(--primary);
+}
+
+.education-section {
+  border-radius: 8px;
+}
+
+.education-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.education-card{
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out;
+  padding: 30px;
+  text-align: center;
+  margin: 1em 0em;
+  font-size: 1.05em;
+}
+
+
+.card:hover, .education-card:hover {
+  transform: translateY(-10px);
+}
+
+.head-span {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  margin: 0;
+}
+
+.subheading {
+  font-style: underline;
+  margin-right: 3px;
+}
+
+.card p, .education-card p {
+  margin: 5px 0;
 }

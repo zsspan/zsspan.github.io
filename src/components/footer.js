@@ -10,7 +10,7 @@ const Footer = () => (
       <a href="https://www.linkedin.com/in/zohairsyed" className="footer-link" target="_blank">linkedin.com/in/zohairsyed</a>
     </div>
     <div className="links-box">
-      <p>Made with React</p>
+    <p>Made with <span className="react-icon">⚛️</span> React</p>
     </div>
     </div>
 </footer>
