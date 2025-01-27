@@ -194,3 +194,32 @@ svg:hover {
     margin: 1em 2em;
   }
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.section {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.role, .section-title {
+  animation: slideUp 2.5s forwards;
+}
