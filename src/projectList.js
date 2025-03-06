@@ -27,12 +27,13 @@ const projectList = [
       description: 'Flask server that uses web scraping, machine learning, databases, and custom curated datasets to predict, visualize and analyze in-depth NBA player statistics',
       tools: ['Python', 'Flask', 'mySQL', 'Pandas', 'BeautifulSoup', 'Scikit-Learn', 'Seaborn'],
       image: 'easynba.png',
-      sourceCode: 'https://github.com/zsspan?tab=repositories',
+      sourceCode: 'https://github.com/zsspan/Easy-NBA',
+      livePreview: 'https://easy-nba.onrender.com/'
     },
     {
       name: 'CSCB20 Course Webpage',
       description: 'A full-stack course webpage designed for a university-level web development course',
-      tools: ['Flask', 'Python', 'SQLite', 'HTML', 'CSS', 'JavaScript'],
+      tools: ['Python', 'Flask', 'SQLite', 'HTML', 'CSS', 'JavaScript'],
       image: 'cscb20.png',
       sourceCode: 'https://github.com/zsspan/course-webpage',
     },
@@ -42,6 +43,13 @@ const projectList = [
       tools: ['Figma', 'Research', 'UCD Process', 'User Testing'],
       image: 'nowsosprop.png',
       sourceCode: 'https://docs.google.com/document/d/1N9SxnsNJASZdvgbfpsQwr4k0cprsaz6N0z4_CTqJkjw/edit?tab=t.0',
+    },
+    {
+      name: 'Spectrum',
+      description: 'A Chrome Extension that uses NLP to categorize and classify your news articles ',
+      tools: ['Flask', 'Python', 'NLP', 'Scikit-Learn', 'Data Collection', 'JavaScript', 'REST'],
+      image: 'spectrumheader.png',
+      sourceCode: 'https://github.com/zsspan/Spectrum',
     },
     {
       name: 'Full Repository List',

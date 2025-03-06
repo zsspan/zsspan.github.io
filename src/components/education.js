@@ -2,7 +2,7 @@ import "../styles/about.css";
 
 const Education = () => {
   return (
-    <section className="section education-section" id="education" data-aos="fade-up">
+    <section className="section education-section" id="education" data-aos="fade-up" data-aos-duration="200">
       <div className="about center">
         <h2 className="role">EDUCATION AND AWARDS</h2>
         <div className="education-cards">

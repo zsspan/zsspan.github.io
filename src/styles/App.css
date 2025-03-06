@@ -204,3 +204,25 @@ svg:hover {
     opacity: 1;
   }
 }
+
+@media (max-width: 720px) {
+
+  /* Disable all animations and fading for mobile */
+  [data-aos="fade-left"],
+  [data-aos="fade-right"],
+  [data-aos="fade-up"],
+  [data-aos="fade-down"] {
+    opacity: 1 !important;
+    /* Keep it fully visible */
+    transform: none !important;
+    /* No translation */
+    transition: none !important;
+    /* Disable transition */
+  }
+}
+
+@media (min-width: 720px) {
+  #projects, #education, #experience {
+    scroll-margin-top: 100px;
+  }
+}

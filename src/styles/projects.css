@@ -60,8 +60,14 @@
 
 /* center the last item if it's alone in the last row */
 @media (min-width: 875px) {
-  .projects-grid > .project:nth-last-child(1):nth-child(odd) {
-    grid-column: 2 / 3;
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  }
+
+  /* Center the last 2 items in the last row */
+  .projects-grid > .project:nth-last-child(2),
+  .projects-grid > .project:nth-last-child(1) {
+    grid-column: span 1;
     justify-self: center;
   }
 }

@@ -17,8 +17,8 @@ const Experience = lazy(() => import("./components/Experiences"));
 const App = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-      once: true,
+      duration: 500,
+      once: false,
     });
   }, []);
 

@@ -57,11 +57,11 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <section className="section" id="skills">
+    <section className="section" id="skills" >
       <h2 className="section-title down">Skills</h2>
       <div className="separator">
         {skillsData.map((category, index) => (
-          <div className="skill-container" key={index}>
+          <div className="skill-container" key={index} data-aos="fade-down">
             <p className="skill-type">{category.type}</p>
             <ul className="skills-list">
               {category.skills.map((skill, index) => (
