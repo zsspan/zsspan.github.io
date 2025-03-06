@@ -76,10 +76,6 @@ h2 {
 
 
 @media (max-width: 600px) {
-  .app .about {
-    margin-top: 2em;
-  }
-
   .left {
     padding-right: 0;
     align-items: center;
@@ -118,7 +114,7 @@ h2 {
   flex-direction: column;
 }
 
-.education-card{
+.education-card {
   background-color: transparent;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
