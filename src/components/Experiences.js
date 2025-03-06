@@ -5,9 +5,9 @@ const Experience = () => {
   return (
     <section className="section" id="experience">
       <div className="about center">
-        <h2 className="role">EXPERIENCES</h2>
+        <h2 className="role" >EXPERIENCES</h2>
         <div className="bottom-content">
-          <div className="card">
+          <div className="card" data-aos="fade-left">
             <div className="card-header">
               <img src="shopify.png" alt="Shopify Logo" className="logo" />
               <span className="company">Shopify</span>

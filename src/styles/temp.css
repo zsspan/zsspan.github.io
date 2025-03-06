@@ -1,0 +1,74 @@
+.projects-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
+    grid-gap: 2em;
+}
+
+.project {
+    padding: 3em 2em 1.5em 2em;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s linear;
+}
+
+.project:hover {
+    transform: translateY(-7px);
+}
+
+.project-description {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.project-tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.5em 0;
+}
+
+.project-tools li {
+    margin: 0.5em;
+    font-weight: bold;
+    font-size: 0.8rem;
+    color: var(--fg-alt);
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 9px;
+    margin: 10px 0;
+}
+
+.icon-link {
+    transition: color 0.2s ease;
+}
+
+.icon-link:hover {
+    color: var(--primary);
+}
+
+.project-header {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    align-items: center;
+}
+
+/* center the last item if it's alone in the last row */
+@media (min-width: 875px) {
+    .projects-grid>.project:nth-last-child(1):nth-child(odd) {
+        grid-column: 2 / 3;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .project {
+        padding: 3em 1em 1.5em 1em;
+        ;
+    }
+}

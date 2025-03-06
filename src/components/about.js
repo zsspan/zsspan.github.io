@@ -1,23 +1,33 @@
+import { useEffect } from "react";
 import { ReactComponent as GitHub } from "../icons/github.svg";
 import { ReactComponent as LinkedIn } from "../icons/linkedin.svg";
 import { ReactComponent as Instagram } from "../icons/ig.svg";
 import "../styles/about.css";
 
 const About = () => {
-  
   // Add event listener for window resize
-  const handleResize = () => {
-    const isMobile = window.innerWidth < 720;
-    const role = document.querySelector(".role .colour");
-  
-    if (isMobile) {
-      role.textContent = "CS";
-    } else {
-      role.textContent = "Computer Science";
-    }
-  };
-  
-  window.addEventListener("resize", handleResize);
+  useEffect(() => {
+    const handleResize = () => {
+      const isMobile = window.innerWidth < 720;
+      const role = document.querySelector(".role .colour");
+
+      if (role) {
+        if (isMobile) {
+          role.textContent = "CS";
+        } else {
+          role.textContent = "Computer Science";
+        }
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div className="about center">
@@ -27,18 +37,19 @@ const About = () => {
       <div className="bottom-content">
         <div className="left">
           <h2 className="role">
-            <span class="colour">Computer Science</span> @ UofT
+            <span className="colour">Computer Science</span> @ UofT
           </h2>
           <p className="desc">
-            Hi! My name is Zohair Syed and I am currently a 2nd-year CS co-op student at
-            the University of Toronto, doing a specialist in software engineering. 
-            I am passionate about most topics and you can find me interested in almost all subjects from technology, math
-            and science all the way to history, language and literature.
+            Hey, I'm Zohair and I am currently a 2nd-year student at the
+            University of Toronto pursuing a specialist in software engineering
+            with a minor in statistics. I have always been passionate about most
+            topics including technology, but also otherwise in science, history,
+            photography, and literature.
             <br></br>
-            <br></br>I have a diverse skillset in computer science and am
-            proficient in many full-stack languages. Alongside my software engineering specialist,
-            I am doing a minor in statistics and I hope to pursue the intersection of these disciplines
-            and explore the realm of machine learning.
+            <br></br>
+            As an undergrad student, I am determined to continuously learn more
+            about the vast field of computer science and share my thoughts and
+            skills with those around me :)
           </p>
           <div className="contact-info center">
             <a href="mailto:zohairr.syed@mail.utoronto.ca">
@@ -52,7 +63,7 @@ const About = () => {
               className="link link--icon"
               target="_blank"
             >
-              <Instagram/>
+              <Instagram />
             </a>
             <a
               href="https://github.com/zsspan"
@@ -60,7 +71,7 @@ const About = () => {
               className="link link--icon"
               target="_blank"
             >
-              <GitHub/>
+              <GitHub />
             </a>
             <a
               href="https://www.linkedin.com/in/zohairsyed"
@@ -68,12 +79,12 @@ const About = () => {
               className="link link--icon"
               target="_blank"
             >
-              <LinkedIn/>
+              <LinkedIn />
             </a>
           </div>
         </div>
         <div className="right">
-          <img className="pfp" src="pfp.jpg" alt="pfp"></img>
+          <img className="pfp" src="pfp.jpg" alt="pfp" />
         </div>
       </div>
     </div>

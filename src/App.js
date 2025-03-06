@@ -2,17 +2,17 @@ import React, { useEffect, Suspense, lazy } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Header from "./components/header";
-import Footer from "./components/footer";
-import Scroll from "./components/scroll";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Scroll from "./components/Scroll";
 
 import "./styles/App.css"; // Import CSS file for additional styling
 
-const About = lazy(() => import("./components/about"));
-const Projects = lazy(() => import("./components/projects"));
-const Skills = lazy(() => import("./components/skills"));
-const Education = lazy(() => import("./components/education"));
-const Experience = lazy(() => import("./components/experience"));
+const About = lazy(() => import("./components/About"));
+const Projects = lazy(() => import("./components/Projects"));
+const Skills = lazy(() => import("./components/Skills"));
+const Education = lazy(() => import("./components/Education"));
+const Experience = lazy(() => import("./components/Experiences"));
 
 const App = () => {
   useEffect(() => {
