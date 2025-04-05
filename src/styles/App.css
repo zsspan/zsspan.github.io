@@ -141,10 +141,6 @@ main {
   transform: translateY(-5px);
 }
 
-#projects {
-  padding-top: 1.5em;
-}
-
 svg {
   fill: var(--fg-alt);
   width: 1em;
@@ -217,8 +213,12 @@ svg:hover {
   }
 }
 
-@media (min-width: 720px) {
-  #projects, #education, #experience {
-    scroll-margin-top: 100px;
+#projects, #education, #experience, #skills {
+  scroll-margin-top: 120px;
+}
+
+@media (max-width: 600px) {
+  #projects, #education, #experience, #skills {
+    scroll-margin-top: 40px;
   }
 }
