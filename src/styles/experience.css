@@ -1,15 +1,29 @@
 .card {
     border-radius: 8px;
-    padding: 30px;
+    padding: 25px 30px;
     margin: 20px 0;
-    background-color: rgba(205, 205, 255, 0.5); /* updated with opacity */
+    background: linear-gradient(80deg, #061743, #9084d5, #c9c4dd);
+    background-size: 400% 400%;
+    animation: gradientMove 6s ease infinite;
     width: 100%;
     max-width: 600px;
     display: flex;
     flex-direction: column;
-    transition: transform 0.2s ease-in-out;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
+  }
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
 
 .card-header {
     display: flex;

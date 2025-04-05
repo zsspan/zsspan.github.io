@@ -135,7 +135,7 @@ h2 {
     align-items: center;
   }
 
-  .education-card {
+  .education-card p{
     font-size: 0.85rem;
   }
 }
