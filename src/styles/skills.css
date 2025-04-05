@@ -11,7 +11,8 @@
 
 .skills-list li {
   margin: 0.5em;
-  padding: 0.8em 1.2em;
+  padding: 0.6em 1em;
+  border-radius: 10px;
   transition: color 0.3s ease-in-out;
   transition: fill 0.3s ease-in-out;
 }
@@ -20,7 +21,7 @@
   color: var(--primary)
 }
 
-.skills-list li:hover svg{
+.skills-list li:hover svg {
   fill: var(--primary);
 }
 
@@ -41,9 +42,10 @@
   color: var(--primary)
 } */
 
-.skill-img{
+.skill-img {
   font-size: 2.15em;
 }
+
 .separator {
   display: flex;
   justify-content: center;
@@ -62,13 +64,13 @@
   margin-bottom: 5px;
 }
 
-.down {
-  padding-top: 1em;
-}
-
 @media (max-width: 600px) {
   .separator {
     flex-direction: column;
     row-gap: 2em;
+  }
+
+  .skills-list li {
+    padding: 0.5em 1em;
   }
 }

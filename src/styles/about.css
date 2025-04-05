@@ -6,6 +6,7 @@ h2 {
   display: flex;
   flex-direction: column;
   margin: 10px;
+  margin-bottom: 4em;
 }
 
 .bottom-content {
@@ -53,12 +54,6 @@ h2 {
 
 .desc {
   max-width: 600px;
-  margin-right: 10px;
-}
-
-.desc2 {
-  font-size: 1rem;
-  text-align: center;
 }
 
 .contact-info {
@@ -72,18 +67,6 @@ h2 {
 
 .about .btn--outline {
   margin-right: 2em;
-}
-
-
-@media (max-width: 600px) {
-  .left {
-    padding-right: 0;
-    align-items: center;
-  }
-
-  .role {
-    margin-bottom: 10px;
-  }
 }
 
 .head-span {
@@ -144,4 +127,15 @@ h2 {
 
 .card p, .education-card p {
   margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+  .left {
+    padding-right: 0;
+    align-items: center;
+  }
+
+  .education-card {
+    font-size: 0.85rem;
+  }
 }

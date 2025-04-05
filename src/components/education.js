@@ -4,7 +4,7 @@ const Education = () => {
   return (
     <section className="section education-section" id="education" data-aos="fade-up" data-aos-duration="200">
       <div className="about center">
-        <h2 className="role">EDUCATION AND AWARDS</h2>
+        <h2 className="section-title">EDUCATION AND AWARDS</h2>
         <div className="education-cards">
           <div className="education-card" data-aos="fade-left">
             <span className="head-span">University of Toronto (2023-Present)</span>
