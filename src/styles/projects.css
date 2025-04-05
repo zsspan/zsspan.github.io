@@ -74,6 +74,10 @@
 
 @media (max-width: 600px) {
   .project {
-    padding: 3em 1em 1.5em 1em;
+    padding: 1.3em;
+  }
+  
+  #projects {
+    margin: 1em 1.25em;
   }
 }

@@ -25,7 +25,7 @@ const projectList = [
     {
       name: 'Easy NBA',
       description: 'Flask server that uses web scraping, machine learning, databases, and custom curated datasets to predict, visualize and analyze in-depth NBA player statistics',
-      tools: ['Python', 'Flask', 'mySQL', 'Pandas', 'BeautifulSoup', 'Scikit-Learn', 'Seaborn'],
+      tools: ['Python', 'Flask', 'MySQL', 'Pandas', 'BeautifulSoup', 'Scikit-Learn', 'Seaborn'],
       image: 'easynba.png',
       sourceCode: 'https://github.com/zsspan/Easy-NBA',
       livePreview: 'https://easy-nba.onrender.com/'

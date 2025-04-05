@@ -1,6 +1,6 @@
 .card {
     border-radius: 8px;
-    padding: 40px;
+    padding: 30px;
     margin: 20px 0;
     background-color: rgba(205, 205, 255, 0.5); /* updated with opacity */
     width: 100%;
@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     transition: transform 0.2s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .card-header {
@@ -27,9 +28,10 @@
 }
 
 .company {
-    color: #201627;
+    color: var(--fg);
     font-size: 1.5em;
     font-weight: bold;
+    font-style: italic;
 }
 
 .card-body {
@@ -43,7 +45,7 @@
     font-size: 1.2em;
     font-weight: bold;
     margin: 8px 0;
-    color: #201627;
+    color: var(--fg);
 }
 
 .dates-location {

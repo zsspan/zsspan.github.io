@@ -7,7 +7,7 @@
 
 .theme {
   --bg: #23283e;
-  --bg-alt: #2a2f4c;
+  --bg-alt: #1f2548;
   --fg: #e0e0ef;
   --fg-alt: #cdcdff;
   --primary: #9eafef;
@@ -17,7 +17,7 @@
 
 main {
   max-width: 1100px;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -188,10 +188,6 @@ svg:hover {
     background: linear-gradient(0deg, #000000, #10183e, #68163c);
     background-size: 180% 180%;
     animation: gradient-animation 2s ease infinite;
-  }
-
-  #projects {
-    margin: 1em 2em;
   }
 }
 
