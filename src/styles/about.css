@@ -129,6 +129,20 @@ h2 {
   margin: 5px 0;
 }
 
+.courses-section {
+  text-align: center;
+  margin: 1em;
+}
+
+.courses-section .skills-list {
+  width: 100%;
+  max-width: none;
+}
+
+.courses-section .head-span {
+  margin: 1em 0 0.5em 0;
+}
+
 @media (max-width: 600px) {
   .left {
     padding-right: 0;
