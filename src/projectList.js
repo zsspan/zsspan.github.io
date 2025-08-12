@@ -15,23 +15,22 @@ const projectList = [
       sourceCode: 'https://github.com/zsspan/Toronto-Asian-Art-Museum-Android-App'
     },
     {
-      name: 'Personal Website',
-      description: 'The website you are currently viewing :)',
-      tools: ['HTML', 'CSS', 'JavaScript', 'React'],
-      image: 'website.png',
-      sourceCode: 'https://github.com/zsspan/zsspan.github.io',
-      livePreview: 'https:zsspan.github.io'
+      name: '~ GLOW ~',
+      description: 'A community-driven webpage made in collaboration with a UofT Prof. to upload, display and analyze temperatures of the Great Lakes',
+      tools: ['Next', 'Express', 'React', 'TypeScript', 'Supabase', 'PostgreSQL', 'Docker'],
+      image: 'glow_ex2.png',
+      sourceCode: 'https://github.com/zsspan?tab=repositories',
     },
     {
       name: 'CSCB20 Course Webpage',
       description: 'A full-stack course webpage designed for a university-level web development course',
-      tools: ['Python', 'Flask', 'SQLite', 'HTML', 'CSS', 'JavaScript'],
+      tools: ['Python', 'Flask', 'SQLite', 'JavaScript', 'HTML', 'CSS',],
       image: 'cscb20.png',
       sourceCode: 'https://github.com/zsspan/course-webpage',
     },
     {
       name: 'Easy NBA',
-      description: 'Flask server that uses web scraping, machine learning, and custom datasets to predict, visualize and analyze in-depth NBA statistics',
+      description: 'App that uses web scraping, machine learning, and custom datasets to predict, visualize and analyze in-depth NBA statistics',
       tools: ['Python', 'Flask', 'MySQL', 'Pandas', 'BeautifulSoup', 'Scikit-Learn', 'Seaborn'],
       image: 'neweasynba.png',
       sourceCode: 'https://github.com/zsspan/Easy-NBA',
@@ -47,24 +46,40 @@ const projectList = [
     {
       name: 'Spectrum',
       description: 'A Chrome Extension that uses NLP to categorize and classify your news articles ',
-      tools: ['Flask', 'Python', 'NLP', 'Scikit-Learn', 'TensorFlow', 'JavaScript'],
+      tools: ['Flask', 'Python', 'NLP', 'Scikit-Learn', 'TensorFlow', 'JavaScript', 'AWS EC2'],
       image: 'spectrumheader.png',
       sourceCode: 'https://github.com/zsspan/Spectrum',
+      livePreview: 'https://chromewebstore.google.com/detail/Article%20Analyzer/fllpbkokngpaoffnkenefelpoilldamo?hl=en'
     },
-    // {
-    //   name: 'The Gallery',
-    //   description: 'A website dedicated to archiving and showcasing my photography',
-    //   tools: ['React', 'JavaScript', 'HTML', 'Tailwind CSS', 'Supabase'],
-    //   image: 'github.png',
-    //   sourceCode: 'https://github.com/zsspan?tab=repositories',
-    // },
     {
+      name: "Tetris in Assembly",
+      description: 'Tetris built entirely using MIPS Assembly for CSCB58 (Computer Organization)',
+      tools: ['MIPS Assembly', ],
+      image: 'mips-test2.png',
+      sourceCode: 'https://github.com/zsspan?tab=repositories',
+    },
+        {
+      name: 'Personal Website',
+      description: 'The website you are currently viewing :)',
+      tools: ['React', 'JavaScript', 'HTML', 'CSS'],
+      image: 'website.png',
+      sourceCode: 'https://github.com/zsspan/zsspan.github.io',
+      livePreview: 'https:zsspan.github.io'
+    },
+    {
+      name: 'The Gallery (WIP)',
+      description: 'A website dedicated to archiving and showcasing my photography',
+      tools: ['React', 'JavaScript', 'Tailwind CSS', 'Firebase'],
+      image: 'thegallery.png',
+      sourceCode: 'https://github.com/zsspan?tab=repositories',
+    },
+        {
       name: 'Full Repository List',
-      description: 'A collection of other minor projects, custom APIs, and more',
+      description: 'A collection of other minor projects, custom APIs and more',
       tools: [],
       image: 'github.png',
       sourceCode: 'https://github.com/zsspan?tab=repositories',
-    }
+    },
   ];
   
   export default projectList;

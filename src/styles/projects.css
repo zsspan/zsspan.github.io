@@ -1,9 +1,15 @@
 .projects-grid {
-  max-width: 1000px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16em, 1fr));
   grid-gap: 2em;
+}
+
+#projects.section {
+  max-width: 2000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project {
@@ -59,14 +65,27 @@
 }
 
 /* center the last item if it's alone in the last row */
-@media (min-width: 875px) {
+
+@media (min-width: 1100px) {
   .projects-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 equal columns on desktop */
   }
 
-  /* Center the last 2 items in the last row */
-  .projects-grid > .project:nth-last-child(2),
-  .projects-grid > .project:nth-last-child(1) {
+  /* Center the last 3, 2, or 1 items in the last row */
+  .projects-grid>.project:nth-last-child(-n+3) {
+    grid-column: span 1;
+    justify-self: center;
+  }
+}
+
+@media (min-width: 875px) and (max-width: 1099px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 equal columns */
+  }
+
+  .projects-grid>.project:nth-last-child(-n+2) {
     grid-column: span 1;
     justify-self: center;
   }
@@ -76,7 +95,7 @@
   .project {
     padding: 1.3em;
   }
-  
+
   #projects {
     margin: 1em 1.25em;
   }
