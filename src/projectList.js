@@ -9,7 +9,7 @@ const projectList = [
     },
     {
       name: 'TAAM Android App',
-      description: 'A full-stack Android App made for the TAAM in conjunction with the CSCB07 Software Design course',
+      description: 'A full-stack Android App made for the Toronto Asian Art Museum to catalogue, manage and display their artifacts',
       tools: ['Android Studio', 'Java', 'Firebase', 'Mockito'],
       image: 'projects/taam.png',
       sourceCode: 'https://github.com/zsspan/Toronto-Asian-Art-Museum-Android-App'
@@ -56,9 +56,9 @@ const projectList = [
       description: 'Tetris built entirely using MIPS Assembly for CSCB58 (Computer Organization)',
       tools: ['MIPS Assembly', ],
       image: 'projects/mips-test2.png',
-      sourceCode: 'https://github.com/zsspan?tab=repositories',
+      sourceCode: 'https://github.com/zsspan/mips-tetris',
     },
-        {
+    {
       name: 'Personal Website',
       description: 'The website you are currently viewing :)',
       tools: ['React', 'JavaScript', 'HTML', 'CSS'],
