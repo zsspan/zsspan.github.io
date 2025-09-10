@@ -93,7 +93,11 @@
 
 @media (max-width: 600px) {
   .project {
-    padding: 1.3em;
+    padding: 1.4em 1.3em;
+  }
+
+  .project-image{
+    width: 95%;
   }
 
   #projects {

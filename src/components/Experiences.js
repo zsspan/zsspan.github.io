@@ -32,10 +32,10 @@ const Experience = () => {
             </div>
             <div className="card-body">
               <p className="position">
-                {isMobile ? "SWE Intern" : "Software Engineering Intern"}
+                {isMobile ? "2x SWE Intern" : "2x Software Engineering Intern"}
               </p>
               <div className="dates-location">
-                <p className="dates">Jan - Apr 2025</p>
+                <p className="dates">Winter & Fall 2025</p>
                 <p className="location">Toronto, ON</p>
               </div>
             </div>
