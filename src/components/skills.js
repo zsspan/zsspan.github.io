@@ -11,13 +11,15 @@ import { ReactComponent as Pandas } from "../icons/skill-icons/pandas.svg";
 import { ReactComponent as Git } from "../icons/skill-icons/git.svg";
 import { ReactComponent as Bash } from "../icons/skill-icons/bash.svg";
 import { ReactComponent as AndroidStudio } from "../icons/skill-icons/android_studio.svg";
-import { ReactComponent as Agile } from "../icons/skill-icons/agile.svg";
-import { ReactComponent as Jira } from "../icons/skill-icons/jira.svg";
 import { ReactComponent as R } from "../icons/skill-icons/r.svg";
 import { ReactComponent as Firebase } from "../icons/skill-icons/firebase.svg";
 import { ReactComponent as SKL } from "../icons/skill-icons/scikitlearn.svg";
 import { ReactComponent as Ruby } from "../icons/skill-icons/ruby.svg";
 import { ReactComponent as Rails } from "../icons/skill-icons/rails.svg";
+import { ReactComponent as Next } from "../icons/skill-icons/next.svg";
+import { ReactComponent as Express } from "../icons/skill-icons/express.svg";
+import { ReactComponent as Docker } from "../icons/skill-icons/docker.svg";
+import { ReactComponent as ReactNative } from "../icons/skill-icons/react-native.svg";
 
 
 import "../styles/skills.css";
@@ -39,17 +41,19 @@ const skillsData = [
     ],
   },
   {
-    type: "Libraries/Tools/Methods",
+    type: "Libraries/Tools",
     skills: [
-      { name: "Flask", icon: Flask },
-      { name: "Android Studio", icon: AndroidStudio },
       { name: "React", icon: React },
+      { name: "Express", icon: Express },
+      { name: "Flask", icon: Flask },
       { name: "Firebase", icon: Firebase },
       { name: "Rails", icon: Rails },
+      { name: "Next", icon: Next },
+      { name: "React Native", icon: ReactNative },
+      { name: "Android Studio", icon: AndroidStudio },
       { name: "Pandas", icon: Pandas },
       { name: "Scikit-Learn", icon: SKL },
-      { name: "Agile", icon: Agile },
-      { name: "Jira", icon: Jira },
+      { name: "Docker", icon: Docker },
       { name: "Git", icon: Git },
     ],
   },
@@ -57,7 +61,7 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <section className="section" id="skills" >
+    <section className="section" id="skills">
       <h2 className="section-title">Skills</h2>
       <div className="separator">
         {skillsData.map((category, index) => (

@@ -17,7 +17,7 @@ const projectList = [
     {
       name: '~ GLOW ~',
       description: 'A community-driven webpage made in collaboration with a UofT Prof. to upload, display and analyze temperatures of the Great Lakes',
-      tools: ['Next', 'Express', 'React', 'TypeScript', 'Supabase', 'PostgreSQL', 'Docker'],
+      tools: ['Next.js', 'Express.js', 'TypeScript', 'Supabase', 'PostgreSQL', 'Docker'],
       image: 'projects/glow_ex2.png',
       sourceCode: 'https://github.com/zsspan?tab=repositories',
     },
