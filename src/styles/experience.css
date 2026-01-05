@@ -1,85 +1,99 @@
 .card {
-    border-radius: 8px;
-    padding: 25px 30px;
-    margin: 20px 0;
-    background: linear-gradient(80deg, #061743, #9084d5, #c9c4dd);
-    background-size: 400% 400%;
-    animation: gradientMove 6s ease infinite;
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 25px 30px;
+  margin: 20px 0;
+  background-size: 400% 400%;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  @keyframes gradientMove {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+
+  50% {
+    background-position: 100% 50%;
   }
-  
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 .card-header {
-    display: flex;
-    align-items: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 16px;
-    width: 100%;
-    background: transparent;
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 16px;
+  width: 100%;
+  background: transparent;
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 16px;
+  width: 50px;
+  height: 50px;
+  margin-right: 16px;
 }
 
 .company {
-    color: var(--fg);
-    font-size: 1.5em;
-    font-weight: bold;
-    font-style: italic;
+  color: var(--fg);
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .card-body {
-    font-size: 1em;
-    text-align: left;
-    width: 100%;
-    background: transparent;
+  font-size: 1em;
+  text-align: left;
+  width: 100%;
+  background: transparent;
 }
 
 .position {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 8px 0;
-    color: var(--fg);
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 8px 0;
+  color: var(--fg);
 }
 
 .dates-location {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .dates {
-    font-size: 1em;
-    margin: 4px 0;
+  font-size: 1em;
+  margin: 4px 0;
 }
 
 .location {
-    font-size: 1em;
-    margin: 4px 0;
+  font-size: 1em;
+  margin: 4px 0;
 }
 
 .bottom-content {
-    width: 95%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
+
+.card-1 {
+    background: linear-gradient(80deg, #061743, #9084d5, #c9c4dd);
+    background-size: 400% 400%;
+    animation: gradientMove 6s ease infinite;
+}
+
+.card-2 {
+    background: linear-gradient(-80deg, #ffaf7b, #d76d77, #3a1c71);
+    background-size: 400% 400%;
+    animation: gradientMove 6s ease infinite;
 }
