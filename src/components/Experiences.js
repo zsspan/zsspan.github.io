@@ -43,7 +43,7 @@ const Experience = () => {
     >
       <div className="about center">
         <h2 className="section-title">EXPERIENCES</h2>
-        <div className="bottom-content">
+        <div className="bottoms-content">
           {experiences.map((exp, index) => (
             <div
               className={`card ${exp.gradientClass}`}
