@@ -18,15 +18,16 @@ const projectList = [
       name: '~ GLOW ~',
       description: 'A community-driven webpage made in collaboration with a UofT Prof. to upload, display and analyze temperatures of the Great Lakes',
       tools: ['Next.js', 'Express.js', 'TypeScript', 'Supabase', 'PostgreSQL', 'Docker'],
-      image: 'projects/glow_ex2.png',
-      sourceCode: 'https://github.com/zsspan?tab=repositories',
+      image: 'projects/glow_ex3.png',
+      sourceCode: 'https://github.com/zsspan/Great-Lakes-Temperature-Tracker',
     },
     {
-      name: 'CSCB20 Course Webpage',
-      description: 'A full-stack course webpage designed for a university-level web development course',
-      tools: ['Python', 'Flask', 'SQLite', 'JavaScript', 'HTML', 'CSS',],
-      image: 'projects/cscb20.png',
-      sourceCode: 'https://github.com/zsspan/course-webpage',
+      name: 'Spectrum',
+      description: 'A Chrome extension that uses NLP and ML to manage and classify your news articles ',
+      tools: ['Flask', 'Python', 'NLP', 'Scikit-Learn', 'TensorFlow', 'JavaScript', 'AWS EC2'],
+      image: 'projects/spectrum_new.png',
+      sourceCode: 'https://github.com/zsspan/Spectrum',
+      livePreview: 'https://chromewebstore.google.com/detail/Article%20Analyzer/fllpbkokngpaoffnkenefelpoilldamo?hl=en'
     },
     {
       name: 'Easy NBA',
@@ -38,25 +39,23 @@ const projectList = [
     },
     {
       name: 'nowSOS: Emergency Notification App',
-      description: 'A design and research-based concept emergency app for the CSCC10 (HCI) course',
+      description: 'A research-based design and concept emergency app for the CSCC10 (HCI) course',
       tools: ['Figma', 'Research', 'UCD Process', 'User Testing'],
-      image: 'projects/nowsosprop.png',
+      image: 'projects/newnowsos.png',
       sourceCode: 'https://docs.google.com/document/d/1N9SxnsNJASZdvgbfpsQwr4k0cprsaz6N0z4_CTqJkjw/edit?tab=t.0',
     },
     {
-      name: 'Spectrum',
-      description: 'A Chrome Extension that uses NLP to categorize and classify your news articles ',
-      tools: ['Flask', 'Python', 'NLP', 'Scikit-Learn', 'TensorFlow', 'JavaScript', 'AWS EC2'],
-      image: 'projects/spectrumheader.png',
-      sourceCode: 'https://github.com/zsspan/Spectrum',
-      livePreview: 'https://chromewebstore.google.com/detail/Article%20Analyzer/fllpbkokngpaoffnkenefelpoilldamo?hl=en'
+      name: 'CSCB20 Course Webpage',
+      description: 'A full-stack course webpage designed for a university-level web development course',
+      tools: ['Python', 'Flask', 'SQLite', 'JavaScript', 'HTML', 'CSS',],
+      image: 'projects/cscb20.png',
+      sourceCode: 'https://github.com/zsspan/course-webpage',
     },
-    {
-      name: "Tetris in Assembly",
-      description: 'Tetris built entirely using MIPS Assembly for CSCB58 (Computer Organization)',
-      tools: ['MIPS Assembly', ],
-      image: 'projects/mips-test2.png',
-      sourceCode: 'https://github.com/zsspan/mips-tetris',
+        {
+      name:'User-Space OS Runtime',
+      description: 'Runtime with preemptive user-level threads, software TLB memory management, and a FUSE file system',
+      tools: ['C', 'Linux'],
+      image: 'projects/runtime2.png',
     },
     {
       name: 'Personal Website',
@@ -67,13 +66,20 @@ const projectList = [
       livePreview: 'https:zsspan.github.io'
     },
     {
+      name: "Tetris in Assembly",
+      description: 'Tetris built entirely using MIPS Assembly for CSCB58 (Computer Organization)',
+      tools: ['MIPS Assembly', ],
+      image: 'projects/mips-test2.png',
+      sourceCode: 'https://github.com/zsspan/mips-tetris',
+    },
+    {
       name: 'The Gallery (WIP)',
       description: 'A website dedicated to archiving and showcasing my photography',
       tools: ['React', 'JavaScript', 'Tailwind CSS', 'Firebase'],
       image: 'projects/thegallery.png',
-      sourceCode: 'https://github.com/zsspan?tab=repositories',
+      // sourceCode: 'https://github.com/zsspan/gallery',
     },
-        {
+    {
       name: 'Full Repository List',
       description: 'A collection of other minor projects, custom APIs and more',
       tools: [],
