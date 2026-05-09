@@ -87,8 +87,9 @@
 .project-tools {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem;
-  margin: 0.75rem 0 0;
+  justify-content: center;
+  gap: 0.4rem;
+  margin: 0.9rem 0 0;
   padding: 0;
   list-style: none;
 }
@@ -121,7 +122,7 @@
 
 @media (min-width: 1100px) {
   .projects-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
