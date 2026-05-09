@@ -1,10 +1,10 @@
 .card {
   border-radius: 8px;
-  padding: 25px 30px;
-  margin: 20px 0;
+  padding: 20px 30px;
+  margin: 12px 0;
   background-size: 400% 400%;
   width: 100%;
-  max-width: 600px;
+  max-width: 675px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -36,9 +36,8 @@
 }
 
 .logo {
-  width: 50px;
   height: 50px;
-  margin-right: 16px;
+  margin-right: 12px;
 }
 
 .company {
@@ -87,13 +86,19 @@
 }
 
 .card-1 {
-    background: linear-gradient(80deg, #061743, #9084d5, #c9c4dd);
+    background: linear-gradient(80deg, #0a2058, #9084d5, #c9c4dd);
     background-size: 400% 400%;
     animation: gradientMove 6s ease infinite;
 }
 
 .card-2 {
-    background: linear-gradient(-80deg, #ffaf7b, #d76d77, #3a1c71);
+    background: linear-gradient(-60deg, #ffaf7b, #d76d77, #3a1c71);
     background-size: 400% 400%;
     animation: gradientMove 6s ease infinite;
+}
+
+.card-3 {
+  background: linear-gradient(60deg, #b65252, #e9d9d4, #3c1370);
+  background-size: 400% 400%;
+  animation: gradientMove 6s ease infinite;
 }

@@ -17,9 +17,17 @@ const Experience = () => {
 
   const experiences = [
     {
+      company: "Rocket",
+      logo: "rocket.png",
+      position: isMobile ? "SWE Intern" : "Software Engineer Intern",
+      dates: "May - Aug, 2026",
+      location: "Detroit, MI",
+      gradientClass: "card-3",
+    },
+    {
       company: "Shopify",
       logo: "shop.png",
-      position: isMobile ? "SWE Intern (POS)" : "Software Engineer Intern - Point-of-Sale",
+      position: isMobile ? "SWE Intern" : "Software Engineer Intern",
       dates: "Sep - Dec, 2025",
       location: "Toronto, ON",
       gradientClass: "card-1",
@@ -27,7 +35,7 @@ const Experience = () => {
     {
       company: "Shopify",
       logo: "shopify.png",
-      position: isMobile ? "SWE Intern (Forms)" : "Software Engineer Intern - Forms",
+      position: isMobile ? "SWE Intern" : "Software Engineer Intern",
       dates: "Jan - Apr, 2025",
       location: "Toronto, ON",
       gradientClass: "card-2",
