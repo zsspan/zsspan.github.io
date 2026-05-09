@@ -1,96 +1,82 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ReactComponent as Menu } from "../icons/menu.svg";
 import { ReactComponent as Globe } from "../icons/globe.svg";
 import { ReactComponent as Close } from "../icons/close.svg";
 
 import "../styles/header.css";
 
+const navLinks = [
+  { href: "#about", label: "About", className: "nav-list-item home" },
+  { href: "#experience", label: "Experience" },
+  { href: "#education", label: "Education" },
+  { href: "#skills", label: "Skills" },
+  { href: "#projects", label: "Projects" },
+];
+
 const Header = () => {
   const [showNavList, setShowNavList] = useState(false);
-  const toggleNavList = () => setShowNavList(!showNavList);
-  
-  const resize = () => {
-    const size = window.innerWidth > 600;
+  const toggleNavList = () => setShowNavList((open) => !open);
+
+  useEffect(() => {
     const home = document.querySelector(".home");
-  
-    if (size) {
-      home.style.display = 'none';
-    } else {
-      home.style.display = 'block';
-    }
-  };
-  
-  window.addEventListener("resize", resize);
+
+    const applyHomeVisibility = () => {
+      if (!home) return;
+      home.style.display = window.innerWidth > 600 ? "none" : "block";
+    };
+
+    applyHomeVisibility();
+    window.addEventListener("resize", applyHomeVisibility);
+    return () => window.removeEventListener("resize", applyHomeVisibility);
+  }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = showNavList ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [showNavList]);
+
   return (
-    <>
-      <header className="header center">
-        <h3>
-          <a href="#" className="link">
-            <Globe className="top-svg globe" fontSize="large"/>
+    <header className="header">
+      <div className="header__inner center">
+        <h3 className="header__brand">
+          <a href="#top" className="link header__logo" aria-label="Zohair Syed home">
+            <Globe className="top-svg globe" />
+            <span className="header__wordmark">ZS</span>
           </a>
         </h3>
-        <nav className="center nav">
+        <nav className="center nav" aria-label="Primary">
           <ul
-            style={{ display: showNavList ? "flex" : null }}
-            className="nav-list"
+            className={`nav-list${showNavList ? " nav-list--open" : ""}`}
           >
-            <li className="nav-list-item home">
-              <a
-                href="#"
-                onClick={toggleNavList}
-                className="link link--nav"
+            {navLinks.map(({ href, label, className }) => (
+              <li
+                key={href}
+                className={["nav-list-item", className].filter(Boolean).join(" ")}
               >
-                Home
-              </a>
-            </li>
-            <li className="nav-list-item">
-              <a
-                href="#skills"
-                onClick={toggleNavList}
-                className="link link--nav"
-              >
-                Skills
-              </a>
-            </li>
-            <li className="nav-list-item">
-              <a
-                href="#education"
-                onClick={toggleNavList}
-                className="link link--nav"
-              >
-                Education
-              </a>
-            </li>
-            <li className="nav-list-item">
-              <a
-                href="#experience"
-                onClick={toggleNavList}
-                className="link link--nav"
-              >
-                Experiences
-              </a>
-            </li>
-            <li className="nav-list-item">
-              <a
-                href="#projects"
-                onClick={toggleNavList}
-                className="link link--nav"
-              >
-                Projects
-              </a>
-            </li>
+                <a
+                  href={href}
+                  onClick={() => setShowNavList(false)}
+                  className="link link--nav"
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
           </ul>
           <button
             type="button"
             onClick={toggleNavList}
             className="btn btn--icon nav-btn"
-            aria-label="toggle navigation"
+            aria-expanded={showNavList}
+            aria-label={showNavList ? "Close menu" : "Open menu"}
           >
-            {showNavList ? <Close className="top-svg"/> : <Menu className="top-svg"/>}
+            {showNavList ? <Close className="top-svg" /> : <Menu className="top-svg" />}
           </button>
         </nav>
-      </header>
-    </>
+      </div>
+    </header>
   );
 };
 

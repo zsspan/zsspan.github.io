@@ -63,7 +63,7 @@ const projectList = [
       tools: ['React', 'JavaScript', 'HTML', 'CSS'],
       image: 'projects/website.png',
       sourceCode: 'https://github.com/zsspan/zsspan.github.io',
-      livePreview: 'https:zsspan.github.io'
+      livePreview: 'https://zsspan.github.io'
     },
     {
       name: "Tetris in Assembly",

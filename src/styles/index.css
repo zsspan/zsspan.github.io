@@ -15,28 +15,36 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
 h1,
 h2,
 h3,
 h4 {
   line-height: 1.2;
   color: var(--fg-alt);
+  font-family: "Outfit", "DM Sans", system-ui, sans-serif;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: clamp(2rem, 1.5rem + 2.5vw, 3.25rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: clamp(1.35rem, 1.15rem + 0.8vw, 1.75rem);
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: clamp(1.1rem, 1rem + 0.35vw, 1.35rem);
 }
 
 h4 {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
 }
 
 ul {
@@ -51,19 +59,22 @@ button {
   cursor: pointer;
 }
 
-
-/* @media (max-width: 310px) {} */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 @media (max-width: 330px) {
   #root {
     display: flex;
+    flex-direction: column;
+    min-width: 0;
   }
 }
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 2.6rem;
     text-align: center;
   }
 }
-

@@ -1,31 +1,54 @@
 .scroll-top {
   position: fixed;
-  bottom: 2em;
-  right: 3em;
+  bottom: 1.5rem;
+  right: clamp(1rem, 3vw, 1.75rem);
+  z-index: 45;
   background-color: transparent;
 }
 
-.scroll-hide{
+.scroll-hide {
   display: none;
 }
 
 .arrow {
-  font-size: 2em !important;
-  fill: black var(--bg) !important;
+  font-size: 1.35rem !important;
+  fill: var(--bg) !important;
 }
 
 .circle {
-  width: 3.15em;
-  height: 3.15em;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
-  background-color: var(--primary);
+  background: linear-gradient(135deg, var(--primary), #7b8fd4);
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.circle:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.circle a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  border-radius: 50%;
+}
+
+.circle a:focus-visible {
+  outline: 2px solid var(--fg-alt);
+  outline-offset: 3px;
 }
 
 @media (max-width: 600px) {
   .scroll-top {
-    right: 1em;
+    bottom: 1rem;
   }
 }
