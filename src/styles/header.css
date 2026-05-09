@@ -1,11 +1,10 @@
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
+  position: relative;
+  z-index: 10;
+  width: 100%;
   height: var(--header-h);
   padding: 0 clamp(0.75rem, 3vw, 1.25rem);
-  margin: 0 auto;
-  max-width: calc(var(--content-max) + 3rem);
+  margin: 0;
   background: rgba(10, 10, 18, 0.72);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);

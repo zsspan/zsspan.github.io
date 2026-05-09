@@ -1,5 +1,14 @@
 .about-section {
   padding-top: clamp(0.5rem, 2vw, 1.25rem);
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .about-section {
+    width: 100%;
+    margin-inline: 0;
+    padding-inline: 0;
+  }
 }
 
 .about {
@@ -7,10 +16,13 @@
   flex-direction: column;
   gap: clamp(1.25rem, 3vw, 1.75rem);
   margin: 0;
+  min-width: 0;
+  width: 100%;
 }
 
 .section-head--hero {
   margin-bottom: 0;
+  margin-top: 22px;
 }
 
 .hero-title {
@@ -22,11 +34,28 @@
 @media (max-width: 900px) {
   .hero-title {
     text-align: center;
-    max-width: none;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    padding-inline: 0;
+    box-sizing: border-box;
   }
 
   .section-head--hero {
     text-align: center;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero-card {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .role {
+    overflow-wrap: break-word;
   }
 }
 
@@ -53,26 +82,82 @@
   box-shadow: var(--shadow-sm);
 }
 
-.left {
-  padding-right: 0;
-}
-
 .right {
   align-items: center;
 }
 
+@media (min-width: 901px) {
+  /* Wider copy column, tighter gutter to photo */
+  .bottom-content {
+    grid-template-columns: minmax(0, 2.85fr) minmax(190px, 0.82fr);
+    align-items: stretch;
+    gap: clamp(0.875rem, 2vw, 1.35rem);
+  }
+
+  .right {
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+  }
+
+  /*
+    Photo height tracks the hero card (role → social row), like old site.
+    Soft cap when copy is unusually tall.
+  */
+  .pfp-frame {
+    box-sizing: border-box;
+    height: min(100%, 300px);
+    width: auto;
+    max-width: 100%;
+    aspect-ratio: 3 / 4;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pfp {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    aspect-ratio: auto;
+  }
+}
+
 .about-name {
   color: var(--primary);
-  white-space: nowrap;
+}
+
+@media (min-width: 901px) {
+  .about-name {
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 900px) {
   .bottom-content {
     grid-template-columns: 1fr;
+    width: 100%;
+    justify-items: stretch;
+    margin-inline: 0;
+  }
+
+  .left {
+    width: 100%;
+    align-items: stretch;
   }
 
   .right {
     order: -1;
+    align-self: center;
+    width: 100%;
+  }
+
+  .pfp {
+    width: min(220px, 72vw);
+    height: auto;
+    aspect-ratio: 3 / 4;
   }
 }
 
@@ -88,9 +173,6 @@
 }
 
 .pfp {
-  width: min(220px, 72vw);
-  height: auto;
-  aspect-ratio: 1;
   object-fit: cover;
   border-radius: calc(var(--radius-lg) - 4px);
   transition: transform 0.2s ease;
@@ -117,7 +199,7 @@
 }
 
 .desc {
-  max-width: 52ch;
+  max-width: 58ch;
   color: var(--fg-muted);
   font-size: 0.95em;
   line-height: 1.65;
