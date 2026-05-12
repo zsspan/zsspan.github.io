@@ -4,8 +4,9 @@
 
 .projects-grid {
   margin: 0 auto;
+  max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
   gap: clamp(1rem, 2.5vw, 1.35rem);
 }
 
@@ -127,8 +128,64 @@
 }
 
 @media (max-width: 600px) {
+  .projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    max-width: 100%;
+    grid-template-columns: unset;
+  }
+
   .project {
-    padding: 1rem 0.95rem;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 0.75rem;
+    align-items: start;
+    padding: 0.5rem 0.75rem;
+    max-height: none;
+    flex: none;
+  }
+
+  .project-header {
+    grid-column: 2;
+    margin-bottom: 0;
+  }
+
+  .project-header h3 {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+  }
+
+  .project-description {
+    grid-column: 2;
+    margin: 0;
+    font-size: 0.8rem;
+    display: block;
+  }
+
+  .project-tools {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+    gap: 0.3rem;
+    margin: 0;
+    width: 100%;
+  }
+
+  .project-tools li {
+    font-size: 0.65rem;
+    padding: 0.15rem 0.4rem;
+  }
+
+  .project-media {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    border: none;
+    margin-top: 1em;
+    width: 100px;
+  }
+
+  .project-image {
+    height: 100%;
   }
 
   #projects {

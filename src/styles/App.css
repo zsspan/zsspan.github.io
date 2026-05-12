@@ -47,17 +47,44 @@ main.main-shell {
   main.main-shell {
     padding-top: clamp(0.75rem, 2vw, 1.25rem);
     padding-bottom: 0;
-    padding-inline: max(
-      1rem,
-      env(safe-area-inset-left, 0px),
-      env(safe-area-inset-right, 0px)
-    );
+    padding-inline: max(1.5rem,
+        env(safe-area-inset-left, 0px),
+        env(safe-area-inset-right, 0px));
+  }
+}
+
+.main-shell--wide {
+  max-width: 1700px;
+  width: min(100%, 1700px);
+  padding: clamp(0.75rem, 2vw, 1.25rem) clamp(1rem, 4vw, 1.5rem) 0;
+  margin: 0 auto;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .main-shell--wide {
+    padding-top: clamp(0.75rem, 2vw, 1.25rem);
+    padding-bottom: 0;
+    padding-inline: max(1rem,
+        env(safe-area-inset-left, 0px),
+        env(safe-area-inset-right, 0px));
   }
 }
 
 .section {
   margin-top: var(--section-gap);
-  scroll-margin-top: 1rem;
+  scroll-margin-top: var(--header-h);
+}
+
+#projects {
+  scroll-margin-top: 8em;
+}
+
+@media (max-width: 600px) {
+  .section {
+    scroll-margin-top: 3.5rem;
+  }
 }
 
 .section:first-of-type {
@@ -65,7 +92,7 @@ main.main-shell {
 }
 
 .section-head {
-  margin-bottom: clamp(1.25rem, 3vw, 1.75rem);
+  margin-bottom: clamp(1rem, 3vw, 1.5rem);
   text-align: left;
 }
 
@@ -80,11 +107,10 @@ main.main-shell {
   color: var(--fg-alt);
   margin-bottom: 0;
   line-height: 1.2;
+  text-align: center;
+  margin-top: 1.5em;
 }
 
-.section-title--center {
-  text-align: center;
-}
 
 .section-head--center {
   text-align: center;
@@ -254,13 +280,11 @@ svg {
 .gradient {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(
-    165deg,
-    #0a0a10 0%,
-    #141228 28%,
-    #1a2548 55%,
-    #1e1a32 100%
-  );
+  background: linear-gradient(165deg,
+      #0a0a10 0%,
+      #141228 28%,
+      #1a2548 55%,
+      #1e1a32 100%);
   background-attachment: fixed;
 }
 
@@ -288,16 +312,19 @@ svg {
 }
 
 @keyframes pulse {
+
   0%,
   100% {
     opacity: 0.45;
   }
+
   50% {
     opacity: 1;
   }
 }
 
 @media (max-width: 720px) {
+
   [data-aos="fade-left"],
   [data-aos="fade-right"],
   [data-aos="fade-up"],
@@ -308,13 +335,6 @@ svg {
   }
 }
 
-#about,
-#projects,
-#education,
-#experience,
-#skills {
-  scroll-margin-top: 1rem;
-}
 
 @media (max-width: 600px) {
   .section {

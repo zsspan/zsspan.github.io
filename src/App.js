@@ -39,9 +39,14 @@ const App = () => {
           <Experience data-aos="fade-up" />
           <Education data-aos="fade-up" />
           <Skills data-aos="fade-up" />
-          <Projects data-aos="fade-up" />
         </Suspense>
       </main>
+
+      <section className="main-shell--wide">
+        <Suspense fallback={<PageFallback />}>
+          <Projects data-aos="fade-up" />
+        </Suspense>
+      </section>
 
       <Scroll />
       <Footer />

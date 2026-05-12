@@ -4,16 +4,26 @@ import "../styles/projects.css";
 
 const Projects = () => {
   return (
-    <section id="projects" className="section projects" data-aos="fade-up" data-aos-duration="200">
+    <section
+      id="projects"
+      className="section projects"
+      data-aos="fade-up"
+      data-aos-duration="200"
+    >
       <div className="section-head section-head--center">
-        <h2 className="section-title section-title--center">PROJECTS</h2>
+        <h2 className="section-title">PROJECTS</h2>
       </div>
 
       <div className="projects-grid" data-aos="fade-right">
         {projectList.map((project, index) => {
           const hasRepo = Boolean(project.sourceCode);
           const image = (
-            <img src={project.image} className="project-image" alt="" loading="lazy" />
+            <img
+              src={project.image}
+              className="project-image"
+              alt=""
+              loading="lazy"
+            />
           );
 
           return (

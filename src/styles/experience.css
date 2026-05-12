@@ -18,12 +18,19 @@
 .exp-card {
   position: relative;
   border-radius: var(--radius-md);
-  padding: clamp(1rem, 2.5vw, 1.2rem) clamp(1.1rem, 2.5vw, 1.35rem);
+  padding: clamp(1rem, 2.5vw, 1.2rem) clamp(1.1rem, 2.5vw, 1.35rem) clamp(1rem, 2.5vw, 1.2rem) 0;
   background: var(--surface);
   border: 1px solid var(--surface-border);
   box-shadow: var(--shadow-sm);
   overflow: hidden;
   transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.exp-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-left: 40px;
 }
 
 .exp-card::before {
@@ -32,10 +39,15 @@
   left: 0;
   top: 0;
   bottom: 0;
-  width: 4px;
+  width: 18px;
   border-radius: 4px 0 0 4px;
-  background: linear-gradient(180deg, var(--primary), var(--accent));
-  opacity: 0.9;
+  /* use a CSS variable for per-card gradients (fallback to theme colors) */
+  background: var(--exp-gradient,
+      linear-gradient(37deg, var(--primary), var(--accent), var(--primary)));
+  background-size: 300% 300%;
+  background-position: 0% 0%;
+  opacity: 0.95;
+  animation: exp-gradient-move 6s ease-in-out infinite alternate;
 }
 
 .exp-card:hover {
@@ -45,15 +57,15 @@
 }
 
 .exp-card--shopify-a::before {
-  background: linear-gradient(180deg, #7c9ae8, #5ad8a6);
+  --exp-gradient: linear-gradient(37deg, #c2e87c, #5ad8a6, #7c9ae8);
 }
 
 .exp-card--shopify-b::before {
-  background: linear-gradient(180deg, #9b8cff, #6ee7b7);
+  --exp-gradient: linear-gradient(37deg, #9b8cff, #6ee7b7, #9b8cff);
 }
 
 .exp-card--rocket::before {
-  background: linear-gradient(180deg, #f472b6, #818cf8);
+  --exp-gradient: linear-gradient(37deg, #f472b6, #818cf8, #f472b6);
 }
 
 .exp-card__top {
@@ -114,13 +126,35 @@
   color: var(--fg-muted);
 }
 
+@keyframes exp-gradient-move {
+  from {
+    background-position: 0% 0%;
+  }
+
+  to {
+    background-position: 100% 100%;
+  }
+}
+
 @media (max-width: 480px) {
   .exp-card__top {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .exp-card__brand {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .exp-card__company {
+    font-size: 1rem;
   }
 
   .exp-card__dates {
-    align-self: flex-start;
+    align-self: auto;
+    flex-shrink: 0;
   }
 }

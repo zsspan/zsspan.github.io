@@ -62,7 +62,7 @@ const Skills = () => {
   return (
     <section className="section skills-section" id="skills">
       <div className="section-head section-head--center">
-        <h2 className="section-title section-title--center">SKILLS</h2>
+        <h2 className="section-title">SKILLS</h2>
       </div>
       <div className="skills-panels">
         {skillsData.map((category) => (
