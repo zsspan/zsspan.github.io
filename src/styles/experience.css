@@ -9,7 +9,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: clamp(0.85rem, 2vw, 1rem);
+  gap: 1.25rem;
   width: 100%;
   max-width: 720px;
   margin-inline: auto;
@@ -17,56 +17,64 @@
 
 .exp-card {
   position: relative;
-  border-radius: var(--radius-md);
-  padding: clamp(1rem, 2.5vw, 1.2rem) clamp(1.1rem, 2.5vw, 1.35rem) clamp(1rem, 2.5vw, 1.2rem) 0;
+  border-radius: 8px;
+  padding: clamp(2rem, 3vw, 2rem);
   background: var(--surface);
-  border: 1px solid var(--surface-border);
-  box-shadow: var(--shadow-sm);
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  background-size: 400% 400%;
+}
+
+.exp-card--shopify-a {
+  background: linear-gradient(60deg, #b65252, #e9d9d4, #3c1370);
+  background-size: 400% 400%;
+  animation: gradientMove 6s ease infinite;
+}
+
+.exp-card--shopify-b {
+  background: linear-gradient(-60deg, #ffaf7b, #d76d77, #3a1c71);
+  background-size: 400% 400%;
+  animation: gradientMove 6s ease infinite;
+}
+
+.exp-card--rocket {
+  background: linear-gradient(80deg, #0a2058, #9084d5, #c9c4dd);
+  background-size: 400% 400%;
+  animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .exp-card__content {
   display: flex;
   flex-direction: column;
   gap: 0;
-  padding-left: 40px;
+  padding-left: 0;
 }
 
 .exp-card::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 18px;
-  border-radius: 4px 0 0 4px;
-  /* use a CSS variable for per-card gradients (fallback to theme colors) */
-  background: var(--exp-gradient,
-      linear-gradient(37deg, var(--primary), var(--accent), var(--primary)));
-  background-size: 300% 300%;
-  background-position: 0% 0%;
-  opacity: 0.95;
-  animation: exp-gradient-move 3s ease-in-out infinite alternate;
+  display: none;
 }
 
 .exp-card:hover {
   transform: translateY(-2px);
-  border-color: var(--surface-border-strong);
   box-shadow: var(--shadow);
 }
 
-.exp-card--shopify-a::before {
-  --exp-gradient: linear-gradient(37deg, #d3e9c2, #5ad8a6, #dce4e1);
-}
-
-.exp-card--shopify-b::before {
-  --exp-gradient: linear-gradient(37deg, #433884, #6edde7, #7d6ee2);
-}
-
-.exp-card--rocket::before {
-  --exp-gradient: linear-gradient(37deg, #f47285, #c581f8, #ad3c77);
-}
 
 .exp-card__top {
   display: flex;
@@ -85,11 +93,11 @@
 }
 
 .exp-card__logo {
-  width: 44px;
-  height: 44px;
+  width: 55px;
+  height: 55px;
   object-fit: contain;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.06);
+  /* background: rgba(255, 255, 255, 0.06); */
   padding: 6px;
   flex-shrink: 0;
 }
@@ -97,43 +105,33 @@
 .exp-card__company {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 1.1rem;
-  color: var(--fg-alt);
-  font-style: normal;
+  font-size: 1.75rem;
+  font-style: italic;
+  color: #ffffff;
 }
 
 .exp-card__dates {
   font-size: 0.82rem;
   font-weight: 600;
-  color: var(--fg-muted);
+  color: #ffffff;
   white-space: nowrap;
   padding: 0.2rem 0.55rem;
   border-radius: 999px;
-  background: var(--primary-soft);
-  border: 1px solid var(--surface-border);
+  background: transparent;
+  border: none;
 }
 
 .exp-card__role {
   margin: 0.65rem 0 0.2rem;
   font-size: 0.95rem;
   font-weight: 600;
-  color: var(--fg);
+  color: #ffffff;
 }
 
 .exp-card__location {
   margin: 0;
   font-size: 0.88rem;
-  color: var(--fg-muted);
-}
-
-@keyframes exp-gradient-move {
-  from {
-    background-position: 0% 0%;
-  }
-
-  to {
-    background-position: 100% 100%;
-  }
+  color: #ffffff;
 }
 
 @media (max-width: 480px) {
