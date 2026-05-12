@@ -47,7 +47,7 @@
   background-size: 300% 300%;
   background-position: 0% 0%;
   opacity: 0.95;
-  animation: exp-gradient-move 6s ease-in-out infinite alternate;
+  animation: exp-gradient-move 3s ease-in-out infinite alternate;
 }
 
 .exp-card:hover {
@@ -57,15 +57,15 @@
 }
 
 .exp-card--shopify-a::before {
-  --exp-gradient: linear-gradient(37deg, #c2e87c, #5ad8a6, #7c9ae8);
+  --exp-gradient: linear-gradient(37deg, #d3e9c2, #5ad8a6, #dce4e1);
 }
 
 .exp-card--shopify-b::before {
-  --exp-gradient: linear-gradient(37deg, #9b8cff, #6ee7b7, #9b8cff);
+  --exp-gradient: linear-gradient(37deg, #433884, #6edde7, #7d6ee2);
 }
 
 .exp-card--rocket::before {
-  --exp-gradient: linear-gradient(37deg, #f472b6, #818cf8, #f472b6);
+  --exp-gradient: linear-gradient(37deg, #f47285, #c581f8, #ad3c77);
 }
 
 .exp-card__top {
