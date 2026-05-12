@@ -34,7 +34,7 @@ const About = () => {
               <span className="colour">Computer Science</span> @ UofT
             </h2>
             <p className="desc">
-              Hey, I'm Zohair and I am currently a 2nd-year student at the
+              Hey, I'm Zohair and I am currently a 3rd-year student at the
               University of Toronto pursuing a specialist in software engineering
               with a minor in statistics. I have always been passionate about most
               topics including technology, but also otherwise in science, history,
@@ -51,7 +51,7 @@ const About = () => {
                   Email
                 </span>
               </a>
-              <a
+              {/* <a
                 href="#"
                 aria-label="instagram"
                 className="link link--icon social-icon"
@@ -59,7 +59,7 @@ const About = () => {
                 rel="noreferrer"
               >
                 <Instagram />
-              </a>
+              </a> */}
               <a
                 href="https://github.com/zsspan"
                 aria-label="github"

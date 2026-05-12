@@ -11,7 +11,7 @@ const Scroll = () => {
     const toggleVisibility = () => {
       setIsVisible(true);
       clearTimeout(timeoutId);
-      const duration = window.innerWidth < 1100 ? 1000 : 10000; // Set duration to null if width > 1000
+      const duration = window.innerWidth < 1100 ? 1000 : 5000; // Set duration to null if width > 1000
       if (duration !== null) {
         timeoutId = setTimeout(() => setIsVisible(false), duration);
       }

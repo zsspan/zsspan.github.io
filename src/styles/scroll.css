@@ -11,25 +11,50 @@
 }
 
 .arrow {
-  font-size: 1.35rem !important;
+  font-size: 1.2rem !important;
   fill: var(--bg) !important;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.22));
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
 .circle {
-  width: 3rem;
-  height: 3rem;
+  position: relative;
+  width: 3.2rem;
+  height: 3.2rem;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--primary), #7b8fd4);
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.28), transparent 35%),
+    linear-gradient(135deg, var(--primary), #7b8fd4 50%, #5ad8a6 120%);
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow:
+    0 10px 24px rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  inset: -1.5px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(158, 175, 239, 0.45), rgba(90, 216, 166, 0.2));
+  opacity: 0.65;
+  z-index: -1;
 }
 
 .circle:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.24);
+  filter: saturate(1.08);
+}
+
+.circle:hover .arrow {
+  transform: translateY(-1px);
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25));
 }
 
 .circle a {
@@ -47,8 +72,19 @@
   outline-offset: 3px;
 }
 
+.circle a:focus-visible .circle {
+  box-shadow:
+    0 0 0 3px rgba(255, 255, 255, 0.18),
+    0 14px 28px rgba(0, 0, 0, 0.28);
+}
+
 @media (max-width: 600px) {
   .scroll-top {
     bottom: 1rem;
+  }
+
+  .circle {
+    width: 3rem;
+    height: 3rem;
   }
 }
