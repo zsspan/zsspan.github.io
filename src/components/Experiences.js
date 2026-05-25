@@ -6,72 +6,74 @@ const Experience = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.matchMedia("(max-width: 600px)").matches);
-    };
+    const mq = window.matchMedia("(max-width: 600px)");
+    const handleResize = () => setIsMobile(mq.matches);
 
     handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    mq.addEventListener("change", handleResize);
+    return () => mq.removeEventListener("change", handleResize);
   }, []);
 
   const experiences = [
     {
       company: "Rocket",
       logo: "rocket.png",
-      position: isMobile ? "SWE Intern" : "Software Engineer Intern",
+      position: "Software Engineer Intern",
       dates: "May - Aug, 2026",
       location: "Detroit, MI",
-      gradientClass: "card-3",
+      accent: "exp-card--rocket",
     },
     {
       company: "Shopify",
       logo: "shop.png",
-      position: isMobile ? "SWE Intern" : "Software Engineer Intern",
+      position: "Software Engineering Intern",
       dates: "Sep - Dec, 2025",
       location: "Toronto, ON",
-      gradientClass: "card-1",
+      accent: "exp-card--shopify-b",
     },
     {
       company: "Shopify",
       logo: "shopify.png",
-      position: isMobile ? "SWE Intern" : "Software Engineer Intern",
+      position: "Software Engineering Intern",
       dates: "Jan - Apr, 2025",
       location: "Toronto, ON",
-      gradientClass: "card-2",
+      accent: "exp-card--shopify-a",
     },
   ];
 
   return (
     <section
-      className="section"
+      className="section experience-section"
       id="experience"
       data-aos="fade-up"
       data-aos-duration="200"
     >
-      <div className="about center">
-        <h2 className="section-title">EXPERIENCES</h2>
-        <div className="bottoms-content">
-          {experiences.map((exp, index) => (
-            <div
-              className={`card ${exp.gradientClass}`}
-              data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
-              key={index}
-            >
-              <div className="card-header">
-                <img src={exp.logo} alt={`${exp.company} Logo`} className="logo" />
-                <span className="company">{exp.company}</span>
-              </div>
-              <div className="card-body">
-                <p className="position">{exp.position}</p>
-                <div className="dates-location">
-                  <p className="dates">{exp.dates}</p>
-                  <p className="location">{exp.location}</p>
-                </div>
-              </div>
-            </div>
-          ))}
+      <div className="about experience-wrap">
+        <div className="section-head">
+          <h2 className="section-title">EXPERIENCE</h2>
         </div>
+        <ul className="experience-list">
+          {experiences.map((exp, index) => (
+            <li
+              className={`exp-card ${exp.accent}`}
+              data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
+              data-aos-offset="180"
+              key={`${exp.company}-${exp.dates}`}
+            >
+              <div className="exp-card__content">
+                <div className="exp-card__top">
+                  <div className="exp-card__brand">
+                    <img src={exp.logo} alt="" className="exp-card__logo" />
+                    <span className="exp-card__company">{exp.company}</span>
+                  </div>
+                  <span className="exp-card__dates">{exp.dates}</span>
+                </div>
+                <p className="exp-card__role">{exp.position}</p>
+                <p className="exp-card__location">{exp.location}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

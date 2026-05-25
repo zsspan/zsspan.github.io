@@ -14,6 +14,13 @@ const Skills = lazy(() => import("./components/Skills"));
 const Education = lazy(() => import("./components/Education"));
 const Experience = lazy(() => import("./components/Experiences"));
 
+const PageFallback = () => (
+  <div className="page-fallback" aria-hidden="true">
+    <span className="page-fallback__bar" />
+    <span className="page-fallback__bar page-fallback__bar--short" />
+  </div>
+);
+
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -26,15 +33,20 @@ const App = () => {
     <div id="top" className="theme app gradient">
       <Header />
 
-      <main>
-        <Suspense fallback={<div>Loading...</div>}>
+      <main className="main-shell">
+        <Suspense fallback={<PageFallback />}>
           <About data-aos="fade-up" />
-          <Skills data-aos="fade-up" />
-          <Education data-aos="fade-up" />
           <Experience data-aos="fade-up" />
-          <Projects data-aos="fade-up" />
+          <Education data-aos="fade-up" />
+          <Skills data-aos="fade-up" />
         </Suspense>
       </main>
+
+      <section className="main-shell--wide">
+        <Suspense fallback={<PageFallback />}>
+          <Projects data-aos="fade-up" />
+        </Suspense>
+      </section>
 
       <Scroll />
       <Footer />

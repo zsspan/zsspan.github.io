@@ -1,14 +1,14 @@
 const projectList = [
     {
       name: 'QuickUp',
-      description: 'The all-in-one notes and task management Chrome web app, QuickUp!',
+      description: 'The all-in-one notes and task management Chrome Web Store Extension, QuickUp!',
       tools: ['Chrome APIs', 'JavaScript', 'HTML', 'CSS', 'Bootstrap'],
       image: 'projects/quickup.png',
       sourceCode: 'https://github.com/zsspan/QuickUp',
       livePreview: 'https://chromewebstore.google.com/detail/quickup/lafgjhgpdaejfnnihhjaggebmicabemc?authuser=3'
     },
     {
-      name: 'TAAM Android App',
+      name: 'TAAM - Android App',
       description: 'A full-stack Android App made for the Toronto Asian Art Museum to catalogue, manage and display their artifacts',
       tools: ['Android Studio', 'Java', 'Firebase', 'Mockito'],
       image: 'projects/taam.png',
@@ -31,7 +31,7 @@ const projectList = [
     },
     {
       name: 'Easy NBA',
-      description: 'App that uses web scraping, machine learning, and custom datasets to predict, visualize and analyze in-depth NBA statistics',
+      description: 'App that uses web scraping and ML to predict, visualize and analyze in-depth NBA statistics',
       tools: ['Python', 'Flask', 'MySQL', 'Pandas', 'BeautifulSoup', 'Scikit-Learn', 'Seaborn'],
       image: 'projects/neweasynba.png',
       sourceCode: 'https://github.com/zsspan/Easy-NBA',
@@ -51,7 +51,7 @@ const projectList = [
       image: 'projects/cscb20.png',
       sourceCode: 'https://github.com/zsspan/course-webpage',
     },
-        {
+    {
       name:'User-Space OS Runtime',
       description: 'Runtime with preemptive user-level threads, software TLB memory management, and a FUSE file system',
       tools: ['C', 'Linux'],
@@ -63,7 +63,7 @@ const projectList = [
       tools: ['React', 'JavaScript', 'HTML', 'CSS'],
       image: 'projects/website.png',
       sourceCode: 'https://github.com/zsspan/zsspan.github.io',
-      livePreview: 'https:zsspan.github.io'
+      livePreview: 'https://zsspan.github.io'
     },
     {
       name: "Tetris in Assembly",
@@ -80,11 +80,11 @@ const projectList = [
       // sourceCode: 'https://github.com/zsspan/gallery',
     },
     {
-      name: 'Full Repository List',
-      description: 'A collection of other minor projects, custom APIs and more',
-      tools: [],
-      image: 'projects/github.png',
-      sourceCode: 'https://github.com/zsspan?tab=repositories',
+      name: 'Advanced Genre Classifier',
+      description: 'A research-oriented investigation on the use of ML models for music genre classification',
+      tools: ['Python', 'TensorFlow', 'Google Colab'],
+      image: 'projects/c11.png',
+      sourceCode: 'https://github.com/zsspan/C11-Project/tree/main',
     },
   ];
   

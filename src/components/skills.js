@@ -20,7 +20,8 @@ import { ReactComponent as Next } from "../icons/skill-icons/next.svg";
 import { ReactComponent as Express } from "../icons/skill-icons/express.svg";
 import { ReactComponent as Docker } from "../icons/skill-icons/docker.svg";
 import { ReactComponent as ReactNative } from "../icons/skill-icons/react-native.svg";
-
+import { ReactComponent as Kotlin } from "../icons/skill-icons/kotlin.svg";
+import { ReactComponent as AWS } from "../icons/skill-icons/aws.svg";
 
 import "../styles/skills.css";
 
@@ -36,6 +37,7 @@ const skillsData = [
       { name: "CSS", icon: CSS },
       { name: "SQL", icon: SQL },
       { name: "Ruby", icon: Ruby },
+      { name: "Kotlin", icon: Kotlin },
       { name: "R", icon: R },
       { name: "Bash", icon: Bash },
     ],
@@ -53,6 +55,7 @@ const skillsData = [
       { name: "Android Studio", icon: AndroidStudio },
       { name: "Pandas", icon: Pandas },
       { name: "Scikit-Learn", icon: SKL },
+      { name: "AWS", icon: AWS },
       { name: "Docker", icon: Docker },
       { name: "Git", icon: Git },
     ],
@@ -61,17 +64,22 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <section className="section" id="skills">
-      <h2 className="section-title">Skills</h2>
-      <div className="separator">
-        {skillsData.map((category, index) => (
-          <div className="skill-container" key={index} data-aos="fade-down">
+    <section className="section skills-section" id="skills">
+      <div className="section-head section-head--center">
+        <h2 className="section-title">SKILLS</h2>
+      </div>
+      <div className="skills-panels">
+        {skillsData.map((category) => (
+          <div className="skill-panel" key={category.type} data-aos="fade-down">
             <p className="skill-type">{category.type}</p>
             <ul className="skills-list">
-              {category.skills.map((skill, index) => (
-                <li className="btn btn--plain" key={index}>
-                  <div className="skill">
-                    <skill.icon className="skill-img" /> <p>{skill.name}</p>
+              {category.skills.map((skill, skillIndex) => (
+                <li className="skill-chip" key={`${skill.name}-${skillIndex}`}>
+                  <div className="skill-pill">
+                    <span className="skill">
+                      <skill.icon className="skill-img" aria-hidden />
+                      <span className="skill-label">{skill.name}</span>
+                    </span>
                   </div>
                 </li>
               ))}
