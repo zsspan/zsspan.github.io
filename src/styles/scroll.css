@@ -65,6 +65,12 @@
   height: 100%;
   color: inherit;
   border-radius: 50%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+.circle a:focus {
+  outline: none;
 }
 
 .circle a:focus-visible {
