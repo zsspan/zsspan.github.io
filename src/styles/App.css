@@ -341,6 +341,11 @@ svg {
     margin-top: clamp(2rem, 6vw, 2.75rem);
   }
 
+  .gradient {
+    background-attachment: scroll;
+    min-height: 100dvh;
+  }
+
   #about,
   #projects,
   #education,
