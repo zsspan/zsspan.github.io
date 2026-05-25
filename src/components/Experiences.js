@@ -57,6 +57,7 @@ const Experience = () => {
             <li
               className={`exp-card ${exp.accent}`}
               data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
+              data-aos-offset="180"
               key={`${exp.company}-${exp.dates}`}
             >
               <div className="exp-card__content">

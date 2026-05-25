@@ -281,9 +281,9 @@ svg {
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(165deg,
-      #0a0a10 0%,
-      #141228 28%,
-      #1a2548 55%,
+      #202037 0%,
+      #211d47 28%,
+      #1e2b58 55%,
       #1e1a32 100%);
   background-attachment: fixed;
 }

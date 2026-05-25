@@ -18,7 +18,7 @@
 .exp-card {
   position: relative;
   border-radius: var(--radius-md);
-  padding: clamp(1rem, 2.5vw, 1.2rem) clamp(1.1rem, 2.5vw, 1.35rem) clamp(1rem, 2.5vw, 1.2rem) 0;
+  padding: clamp(0.25rem, 2.5vw, 1.2rem) clamp(1.1rem, 2.5vw, 1.35rem) clamp(1rem, 2.5vw, 1.2rem) 0;
   background: var(--surface);
   border: 1px solid var(--surface-border);
   box-shadow: var(--shadow-sm);
@@ -85,8 +85,8 @@
 }
 
 .exp-card__logo {
-  width: 44px;
-  height: 44px;
+  width: 55px;
+  height: 55px;
   object-fit: contain;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.06);
@@ -97,7 +97,7 @@
 .exp-card__company {
   font-family: "Outfit", sans-serif;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   color: var(--fg-alt);
   font-style: normal;
 }
