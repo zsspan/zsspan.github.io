@@ -2,7 +2,66 @@ import { useEffect } from "react";
 import { ReactComponent as GitHub } from "../icons/github.svg";
 import { ReactComponent as LinkedIn } from "../icons/linkedin.svg";
 import { ReactComponent as Instagram } from "../icons/ig.svg";
+import { ReactComponent as Sporcle } from "../icons/sporcle.svg";
+import { ReactComponent as Camera } from "../icons/camera.svg";
+import { ReactComponent as Report } from "../icons/report.svg";
 import "../styles/about.css";
+
+// Primary contact links (core socials, sits next to the Email button)
+const primaryLinks = [
+  {
+    key: "github",
+    href: "https://github.com/zsspan",
+    label: "github",
+    Icon: GitHub,
+  },
+  {
+    key: "linkedin",
+    href: "https://www.linkedin.com/in/zohairsyed",
+    label: "linkedin",
+    Icon: LinkedIn,
+  },
+  // {
+  //   key: "instagram",
+  //   href: "#",
+  //   label: "instagram",
+  //   Icon: Instagram,
+  // },
+];
+
+// Secondary links (personal projects / extras), shown after the divider
+const secondaryLinks = [
+    {
+    key: "write-ups",
+    href: "https://drive.google.com/drive/folders/1pEPjTcFwncFG14nGZUWpYu-WwVUBBP3o?usp=sharing",
+    label: "write-ups",
+    Icon: Report,
+  },
+  {
+    key: "sporcle",
+    href: "https://www.sporcle.com/user/PineappleTrivia/",
+    label: "sporcle",
+    Icon: Sporcle,
+  },
+  {
+    key: "photography",
+    href: "https://zohairsyedphotography.vercel.app/",
+    label: "photography",
+    Icon: Camera,
+  },
+];
+
+const SocialLink = ({ href, label, Icon }) => (
+  <a
+    href={href}
+    aria-label={label}
+    className="link link--icon social-icon"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <Icon />
+  </a>
+);
 
 const About = () => {
   useEffect(() => {
@@ -34,50 +93,37 @@ const About = () => {
               <span className="colour">Computer Science</span> @ UofT
             </h2>
             <p className="desc">
-              Hey, I'm Zohair and I am currently a 3rd-year student at the
-              University of Toronto pursuing a specialist in software engineering
-              with a minor in statistics. I have always been passionate about most
-              topics including technology, but also otherwise in science, history,
-              photography, and literature.
+              Hey, I'm Zohair and I'm a 3rd-year student at the
+              University of Toronto pursuing a specialist in software
+              engineering with a minor in statistics. Here you can find a
+              collection of my academic, personal and professional work.
             </p>
             <p className="desc desc--tight">
-              As an undergrad student, I am determined to continuously learn more
-              about the vast field of computer science and share my thoughts and
-              skills with those around me :)
+              I have always been passionate about most topics including
+              technology, but also enjoy science, history,
+              photography, and literature. Aside from the regular links
+              below, you can also find some of my writeups, my Sporcle quizzes, and
+              a WIP photography website :)
             </p>
             <div className="contact-info center">
-              <a href="mailto:zohairr.syed@mail.utoronto.ca">
-                <span type="button" className="btn btn--outline">
-                  Email
-                </span>
-              </a>
-              {/* <a
-                href="#"
-                aria-label="instagram"
-                className="link link--icon social-icon"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Instagram />
-              </a> */}
-              <a
-                href="https://github.com/zsspan"
-                aria-label="github"
-                className="link link--icon social-icon"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <GitHub />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/zohairsyed"
-                aria-label="linkedin"
-                className="link link--icon social-icon"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <LinkedIn />
-              </a>
+              <div className="contact-group">
+                <a href="mailto:zohairr.syed@mail.utoronto.ca">
+                  <span type="button" className="btn btn--outline">
+                    Email
+                  </span>
+                </a>
+                {primaryLinks.map(({ key, ...link }) => (
+                  <SocialLink key={key} {...link} />
+                ))}
+              </div>
+
+              <div className="contact-divider" aria-hidden="true" />
+
+              <div className="contact-group">
+                {secondaryLinks.map(({ key, ...link }) => (
+                  <SocialLink key={key} {...link} />
+                ))}
+              </div>
             </div>
           </div>
           <div className="right">
